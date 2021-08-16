@@ -1,0 +1,343 @@
+{
+  "data": [
+    { "name": "base",
+      "desc": "Базовый комплект - это основа Raspberry Box. <br>Для его создания использованы натуральные и гипоаллергенные материалы. Элементы, входящие в комплект, указаны в описании.<br><br>*Бесплатная доставка по России и экологичная упаковка из натуральной саржи с принтом ручной работы входят во все комплекты Raspberry Box.",
+      "quantity": 1,
+      "items": [
+        {
+          "quantity": 1,
+          "name": "grass",
+          "type": "standard",
+          "title": "Комплект веточки",
+          "img": "img_grass.jpg",
+          "code": "STDGrass"
+        },
+        {
+          "quantity": 1,
+          "name": "grassYellow",
+          "type": "standard",
+          "title": "Комплект веточки с лимоном",
+          "img": "img_grassYellow.jpg",
+          "code": "STDGrassYellow"
+        },
+        {
+          "quantity": 1,
+          "name": "yellowGrass",
+          "type": "standard",
+          "title": "Лимонный комплект с веточками",
+          "img": "img_yellowGrass.jpg",
+          "code": "STDYellowGrass"
+        },
+        {
+          "quantity": 1,
+          "name": "yellow",
+          "type": "standard",
+          "title": "Лимонный комплект",
+          "img": "img_yellow.jpg",
+          "code": "STDYellow"
+        },
+        {
+          "quantity": 1,
+          "name": "eucalyptus",
+          "type": "standard",
+          "title": "Эвкалиптовый комплект",
+          "img": "img_eucalyptus.jpg",
+          "code": "STDEucalyptus"
+        },
+        {
+          "quantity": 1,
+          "name": "eucalyptusPink",
+          "type": "standard",
+          "title": "Эвкалиптово-розовый комплект",
+          "img": "img_eucalyptusPink.jpg",
+          "code": "STDEucalyptusPink"
+        },
+        {
+          "quantity": 1,
+          "name": "pinkEucalyptus",
+          "type": "standard",
+          "title": "Розово-эвкалиптовый комплект",
+          "img": "img_pinkEucalyptus.jpg",
+          "code": "STDPinkEucalyptus"
+        },
+        {
+          "quantity": 1,
+          "name": "rose",
+          "type": "standard",
+          "title": "Комплект пыльная роза",
+          "img": "img_rose.jpg",
+          "code": "STDRose"
+        },
+        {
+          "quantity": 1,
+          "name": "beigeHouse",
+          "type": "deluxe",
+          "option": 1,
+          "title": "Бежевый комплект с одеялом",
+          "img": "img_beigeHouse.jpg",
+          "code": "DLXBeigeHouse"
+        },
+        {
+          "quantity": 1,
+          "name": "greyPen",
+          "type": "deluxe",
+          "option": 1,
+          "title": "Дымчатый комплект с одеялом",
+          "img": "img_greyPen.jpg",
+          "code": "DLXGreyPen"
+        },
+        {
+          "quantity": 1,
+          "name": "flowersBirds",
+          "type": "deluxe",
+          "option": 2,
+          "title": "Комплект цветы и птички",
+          "img": "img_flowersBirds.jpg",
+          "code": "DLXFlowersBirds"
+        },
+        {
+          "quantity": 1,
+          "name": "cottonFlowers",
+          "type": "deluxe",
+          "option": 2,
+          "title": "Комплект цветки хлопка",
+          "img": "img_cottonFlowers.jpg",
+          "code": "DLXCottonFlowers"
+        }
+      ],
+      "finalCode": "",
+      "finalRate": ""
+    },
+    {
+      "name": "toy",
+      "desc": "Зайчик станет лучшим другом малыша. <br>Игрушка ручной работы выполнена из умягчённого льна. <br>Наполнитель: гипоаллергенный холлофайбер. Одежда из 100% хлопка. <br>Ручная вышивка. Рост зайчика: 30 см",
+      "quantity": 1,
+      "items": [
+        {
+          "quantity": 1,
+          "name": "girlBlueFlowers",
+          "title": "Зайчик в платье с голубыми цветочками",
+          "img": "img_girlBlueFlowers.jpg",
+          "code": "BGBlueFlowers"
+        },
+        {
+          "quantity": 1,
+          "name": "boyWhitePen",
+          "title": "Зайчик в белых штанишках",
+          "img": "img_boyWhitePen.jpg",
+          "code": "BBWhitePen"
+        },
+        {
+          "quantity": 1,
+          "name": "girlPinkFlowersOrange",
+          "title": "Зайчик в платье с алыми цветочками",
+          "img": "img_girlPinkFlowersOrange.jpg",
+          "code": "BGPinkFlowersOrange"
+        },
+        {
+          "quantity": 1,
+          "name": "boyBlueFlowers",
+          "title": "Зайчик в голубых штанишках с цветочками",
+          "img": "img_boyBlueFlowers.jpg",
+          "code": "BBBlueFlowers"
+        },
+        {
+          "quantity": 1,
+          "name": "girlManyFlowers",
+          "title": "Зайчик в юбке с пёстрыми цветочками",
+          "img": "img_girlManyFlowers.jpg",
+          "code": "BGManyFlowers"
+        },
+        {
+          "quantity": 1,
+          "name": "boyBlueStrips",
+          "title": "Зайчик в полосатых штанишках",
+          "img": "img_boyBlueStrips.jpg",
+          "code": "BBBlueStrips"
+        },
+        {
+          "quantity": 1,
+          "name": "girlGrey",
+          "title": "Зайчик в дымчатом платье",
+          "img": "img_girlGrey.jpg",
+          "code": "BGGrey"
+        },
+        {
+          "quantity": 1,
+          "name": "girlBlueFlowersPink",
+          "title": "Зайчик в голубом платье с алыми цветочками",
+          "img": "img_girlBlueFlowersPink.jpg",
+          "code": "BGBlueFlowersPink"
+        },
+        {
+          "quantity": 1,
+          "name": "boyGrass",
+          "title": "Зайчик в болотных штанишках",
+          "img": "img_boyGrass.jpg",
+          "code": "BBGrass"
+        },
+        {
+          "quantity": 1,
+          "name": "girlWhitePen",
+          "title": "Зайчик в белом платье с пёрышками",
+          "img": "img_girlWhitePen.jpg",
+          "code": "BGWhitePen"
+        },
+        {
+          "quantity": 1,
+          "name": "girlDoodle",
+          "title": "Зайчик в юбке с цветочками и завиточками",
+          "img": "img_girlDoodle.jpg",
+          "code": "BGDoodle"
+        },
+        {
+          "quantity": 1,
+          "name": "boyGrey",
+          "title": "Зайчик в дымчатых штанишках",
+          "img": "img_boyGrey.jpg",
+          "code": "BBGrey"
+        },
+        {
+          "quantity": 1,
+          "name": "girlWhiteBerries",
+          "title": "Зайчик в белом платье с ягодками",
+          "img": "img_girlWhiteBerries.jpg",
+          "code": "BGWhiteBerries"
+        },
+        {
+          "quantity": 1,
+          "name": "boyBlackWhite",
+          "title": "Зайчик в штанишках с чёрными цветочками",
+          "img": "img_boyBlackWhite.jpg",
+          "code": "BBBlackWhite"
+        }
+      ],
+      "finalCode": "",
+      "finalRate": ""
+    },
+    {
+      "name": "accessory",
+      "desc": "Вязаный грызунок выполнен из натуральной пряжи (100% хлопок). Фактурный рисунок помогает развивать мелкую моторику малыша и хорошо массажирует пальчики. Подобранные цвета делают игрушку стильной и привлекательной. Кольцо выполнено из натурального бука. Все детали съёмные. Игрушку можно стирать.",
+      "quantity": 1,
+      "items": [
+        {
+          "quantity": 1,
+          "name": "leaves",
+          "type": "yes",
+          "title": "Грызунок с листочками",
+          "img": "img_leaves.jpg",
+          "code": "ACSLeaves"
+        },
+        {
+          "quantity": 1,
+          "name": "hearts",
+          "type": "yes",
+          "title": "Грызунок с сердечками",
+          "img": "img_hearts.jpg",
+          "code": "ACSHearts"
+        },
+        {
+          "quantity": 1,
+          "name": "flower",
+          "type": "yes",
+          "title": "Грызунок с цветочком, сердечком и листиком",
+          "img": "img_flower.jpg",
+          "code": "ACSFlower"
+        },
+        {
+          "quantity": 1,
+          "name": "no",
+          "type": "no",
+          "title": "Нет, спасибо",
+          "code": "ACS"
+        }
+      ],
+      "finalCode": "",
+      "finalRate": ""
+    },
+    {
+      "name": "extra",
+      "desc": "Погремушка Мороженое выполнена из натуральной пряжи (100% хлопок). Внутри гипоаллергенный холлофайбер и безопасная гремелка. Игрушку можно стирать.",
+      "quantity": 1,
+      "items": [
+        {
+          "quantity": 1,
+          "name": "mint",
+          "type": "yes",
+          "title": "Мятное мороженое",
+          "img": "img_mint.jpg",
+          "code": "ICEMint"
+        },
+        {
+          "quantity": 1,
+          "name": "strawberry",
+          "type": "yes",
+          "title": "Клубничное мороженое",
+          "img": "img_strawberry.jpg",
+          "code": "ICEStrawberry"
+        },
+        {
+          "quantity": 1,
+          "name": "lemon",
+          "type": "yes",
+          "title": "Лимонное мороженое",
+          "img": "img_lemon.jpg",
+          "code": "ICELemon"
+        },
+        {
+          "quantity": 1,
+          "name": "no",
+          "type": "no",
+          "title": "Нет, спасибо",
+          "code": "ICE"
+        }
+      ],
+      "finalCode": "",
+      "finalRate": ""
+    },
+    {
+      "name": "postcard",
+      "desc": "Открытка является необходимым элементом любого подарка. Raspberry Box не исключение. Открытка с цветочным дизайном подчеркнёт индивидуальность подарка. Обратная сторона светлая, для тёплых сердечных пожеланий.",
+      "quantity": 1,
+      "items": [
+        {
+          "quantity": 1,
+          "name": "one",
+          "title": "Открытка 'Привет, малыш!'",
+          "img": "img_1.jpg",
+          "code": "POne"
+        },
+        {
+          "quantity": 1,
+          "name": "two",
+          "title": "Открытка 'Рахат-лукум наших сердец'",
+          "img": "img_2.jpg",
+          "code": "PTwo"
+        },
+        {
+          "quantity": 1,
+          "name": "three",
+          "title": "Открытка 'Ура! Мама и папа!'",
+          "img": "img_3.jpg",
+          "code": "PThree"
+        },
+        {
+          "quantity": 1,
+          "name": "four",
+          "title": "Открытка 'Счастья будет больше'",
+          "img": "img_4.jpg",
+          "code": "PFour"
+        },
+        {
+          "quantity": 1,
+          "name": "five",
+          "title": "Открытка 'Солнышко светит ярче!'",
+          "img": "img_5.jpg",
+          "code": "PFive"
+        }
+      ],
+      "finalCode": "",
+      "finalRate": ""
+    }
+  ]
+}

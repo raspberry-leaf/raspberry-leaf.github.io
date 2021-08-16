@@ -1,0 +1,56 @@
+{
+  "rate": [
+    {
+      "name": "result",
+      "base": "",
+      "toy": ""
+    },
+    {
+      "name": "base",
+      "rate": [
+        {
+          "type": "standard",
+          "rate": 1850
+        },
+        {
+          "type": "deluxe",
+          "rate": 2950
+        }
+      ]
+    },
+    {
+      "name": "toy",
+      "rate": 2150
+    },
+    {
+      "name": "accessory",
+      "rate": [
+        {
+          "type": "yes",
+          "rate": 445
+        },
+        {
+          "type": "no",
+          "rate": 0
+        }
+      ]
+    },
+    {
+      "name": "extra",
+      "rate": [
+        {
+          "type": "yes",
+          "rate": 740
+        },
+        {
+          "type": "no",
+          "rate": 0
+        }
+      ]
+    },
+    {
+      "name": "postcard",
+      "rate": 150
+    }
+  ]
+}
