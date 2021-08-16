@@ -4,44 +4,64 @@ import { Link, withRouter } from "react-router-dom";
 function Navigation(props) {
     return (
         <div className="navigation">
-            <nav class="navbar navbar-expand navbar-dark bg-dark">
-                <div class="container">
-                    <Link class="navbar-brand" to="/">
-                        React Multi-Page Website
-                    </Link>
-
-                    <div>
-                        <ul class="navbar-nav ml-auto">
+            <nav >
+                <div>
+                        <ul>
                             <li
-                                class={`nav-item  ${
+                                className={`nav-item  ${
                                     props.location.pathname === "/" ? "active" : ""
                                 }`}
                             >
-                                <Link class="nav-link" to="/">
-                                    Home
-                                    <span class="sr-only">(current)</span>
+                                <Link className="nav-link" to="/">
+                                    Главная
                                 </Link>
                             </li>
                             <li
-                                class={`nav-item  ${
+                                className={`nav-item  ${
+                                    props.location.pathname === "/catalog" ? "active" : ""
+                                }`}
+                            >
+                                <Link className="nav-link" to="/catalog">
+                                    Каталог
+                                </Link>
+                            </li>
+                            <li
+                                className={`nav-item  ${
                                     props.location.pathname === "/about" ? "active" : ""
                                 }`}
                             >
-                                <Link class="nav-link" to="/about">
-                                    About
+                                <Link className="nav-link" to="/about">
+                                    О нас
                                 </Link>
                             </li>
                             <li
-                                class={`nav-item  ${
+                                className={`nav-item  ${
+                                    props.location.pathname === "/delivery" ? "active" : ""
+                                }`}
+                            >
+                                <Link className="nav-link" to="/delivery">
+                                    Доставка
+                                </Link>
+                            </li>
+                            <li
+                                className={`nav-item  ${
                                     props.location.pathname === "/contact" ? "active" : ""
                                 }`}
                             >
-                                <Link class="nav-link" to="/contact">
-                                    Contact
+                                <Link className="nav-link" to="/contact">
+                                    Контакты
+                                </Link>
+                            </li>
+                            <li
+                                className={`nav-item  ${
+                                    props.location.pathname === "/cart" ? "active" : ""
+                                }`}
+                            >
+                                <Link className="nav-link" to="/cart">
+                                    Корзина
                                 </Link>
                             </li>
                         </ul>
-                    </div>
                 </div>
             </nav>
         </div>
