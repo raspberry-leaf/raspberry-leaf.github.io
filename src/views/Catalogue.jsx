@@ -47,10 +47,10 @@ const Catalogue = () => {
     return (
         <div className="contact">
             <div>
-                        <h1>Каталог</h1>
-                        <p>
-                            {products}
-                        </p>
+                <h1>Каталог</h1>
+                <div>
+                    {products}
+                </div>
 
             </div>
         </div>

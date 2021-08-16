@@ -1,4 +1,5 @@
 import Main from "./views/Main";
+import "./App.css";
 
 const App = (props) => {
 
