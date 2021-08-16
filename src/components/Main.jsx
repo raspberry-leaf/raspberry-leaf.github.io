@@ -7,6 +7,7 @@ import MainBlock from "./MainBlock";
 import {Sticky, StickyContainer} from "react-sticky";
 import ScrollToTop from "./ScrollToTop";
 import GoogleFontLoader from 'react-google-font-loader';
+import Navigation from "./Navigation";
 
 const useStyles = makeStyles({
 	box: {
@@ -229,7 +230,7 @@ const Main = (props) => {
 		<StickyContainer >
 			<ThemeProvider theme={theme}>
 			<CssBaseline />
-
+			<Navigation/>
 			<Sticky className="sticky">
 				{({style}) => (
 					<div style={{...style, zIndex: '999'}}>
