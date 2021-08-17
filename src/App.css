@@ -9092,10 +9092,32 @@ textarea.form-control {
   width: 100%;
   height: auto;
   max-width: 240px;
+  padding: 10px 0;
 }
 
 .nav-link_center {
   display: flex;
   align-items: center;
   justify-content: flex-start
+}
+
+
+.hero-rasp-cart{
+  background-image: url("./img/bgCart.png");
+}
+
+.hero-rasp-delivery{
+  background-image: url("./img/bgDelivery.png");
+}
+
+.hero-rasp-catalog{
+  background-image: url("./img/bgCatalog.png");
+}
+
+.hero-rasp-about{
+  background-image: url("./img/bgAbout.png");
+}
+
+.hero-rasp-contacts{
+  background-image: url("./img/bgContacts.png");
 }

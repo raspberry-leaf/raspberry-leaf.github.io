@@ -24,7 +24,7 @@ const Main = (props) => {
                     </Route>
                     <Route path="/delivery" exact component={() => <Delivery />} />
                     <Route path="/contact" exact component={() => <Contact />} />
-                    <Route path="/contact" exact component={() => <Cart />} />
+                    <Route path="/cart" exact component={() => <Cart />} />
                 </Switch>
                 <Footer />
             </Router>

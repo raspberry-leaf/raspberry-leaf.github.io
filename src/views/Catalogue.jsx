@@ -47,7 +47,15 @@ const Catalogue = () => {
     return (
         <div className="contact">
             <div>
-                <h1>Каталог</h1>
+                <div className="hero-wrap hero-bread hero-rasp-catalog">
+                    <div className="container">
+                        <div className="row no-gutters slider-text align-items-center justify-content-center">
+                            <div className="col-md-9 text-center">
+                                <h1 className="mb-0 bread">Каталог</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div>
                     {products}
                 </div>
