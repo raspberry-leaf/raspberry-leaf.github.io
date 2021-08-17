@@ -18,7 +18,7 @@ const Cart = () => {
             </div>
             <div className="ftco-section ftco-cart">
                 <div className="container">
-                    <div className="row">
+                    <div className="row pt-5">
                         <div className="col-md-12 ">
                             <div className="cart-list">
                                 <table className="table">
@@ -55,39 +55,34 @@ const Cart = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <iframe name="dummyframe" id="dummyframe"></iframe>
-            <section className="ftco-section">
-                <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-xl-8">
+                    <div className="row mt-5 pt-2 d-flex">
+                        <div className="col-md-8">
                             <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScvd7K0Gg1GOIz_t3DIsh9DQGDHdfF38Ux1P0TOr7FE5g9bVA/formResponse"
                                   className="billing-form bg-light p-3 p-md-5" target="dummyframe" onSubmit={handleSubmit}>
                                 <h3 className="mb-4 billing-heading">Оформить заказ</h3>
                                 <div className="row align-items-end">
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 display-hidden">
                                         <div className="form-group">
                                             <label>Наименование товара</label>
                                             <input type="text" className="form-control" name="entry.1449321021" placeholder=""/>
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 display-hidden">
                                         <div className="form-group">
                                             <label>Артикул</label>
                                             <input type="text" name="entry.1337168616" className="form-control" placeholder=""/>
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 display-hidden">
                                         <div className="form-group">
                                             <label>Цена</label>
                                             <input type="text" name="entry.1054069143" className="form-control" placeholder=""/>
                                         </div>
                                     </div>
-                                    <p className="col-md-12">Куда отправить подтверждение заказа?</p>
+                                    <p className="col-md-12 mb-3"><span className="formSubTitle">Куда отправить подтверждение заказа?</span></p>
                                     <div className="w-100"></div>
                                     <div className="col-md-12">
-                                        <div className="form-group mt-4">
+                                        <div className="form-group mb-0">
                                             <div className="radio">
                                                 <label htmlFor="WhatsApp" className="mr-3">
                                                     <input type="radio"
@@ -116,13 +111,13 @@ const Cart = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-12">
+                                    <div className="col-md-12 mb-3">
                                         <div className="form-group">
                                             <label>Данные для связи</label>
                                             <input type="text" name="entry.1161355389" required className="form-control" placeholder=""/>
                                         </div>
                                     </div>
-                                    <p className="col-md-12">Данные для почтовой отправки</p>
+                                    <p className="col-md-12"><span className="formSubTitle">Данные для почтовой отправки</span></p>
                                     <div className="w-100"></div>
                                     <div className="col-md-6">
                                         <div className="form-group">
@@ -158,55 +153,48 @@ const Cart = () => {
                                     </div>
                                     <div className="w-100"></div>
                                     <div className="col-md-12">
-                                        <div className="form-group">
+                                        <div className="form-group d-flex flex-column">
                                             <label>Комментарий к заказу</label>
-                                            <textarea name="entry.363955861" cols="30" rows="10"/>
+                                            <textarea name="entry.363955861" cols="10" rows="5"/>
                                         </div>
                                     </div>
+                                    <div className="col-md-6 m-auto"><button type="submit" className="btn btn-primary py-3 px-4 w-100">Отправить</button></div>
                                 </div>
-                                <p><button type="submit" className="btn btn-primary py-3 px-4">Отправить</button></p>
+
                             </form>
 
 
-                            <div className="row mt-5 pt-3 d-flex">
-                                <div className="col-md-12">
-                                    <div className="cart-detail cart-total bg-light p-3 p-md-4">
-                                        <h3 className="billing-heading mb-4">Итого</h3>
-                                        <p className="d-flex">
-                                            <span>Товары</span>
-                                            <span>$20.60</span>
-                                        </p>
-                                        <p className="d-flex">
-                                            <span>Доставка</span>
-                                            <span>0</span>
-                                        </p>
-                                        <hr/>
-                                            <p className="d-flex total-price">
-                                                <span>Итого</span>
-                                                <span>$17.60</span>
-                                            </p>
-                                    </div>
-                                    <p><button  className="btn btn-primary py-3 px-4">Place an order</button></p>
-                                </div>
 
-
-
-
+                        </div>
+                        <div className="col-md-4 marginAuto">
+                            <div className="cart-detail cart-total bg-light p-3 p-md-4">
+                                <h3 className="billing-heading mb-4">Итого</h3>
+                                <p className="d-flex">
+                                    <span>Товары</span>
+                                    <span>$20.60</span>
+                                </p>
+                                <p className="d-flex">
+                                    <span>Доставка</span>
+                                    <span>Бесплатно</span>
+                                </p>
+                                <hr/>
+                                <p className="d-flex total-price">
+                                    <span>Итого</span>
+                                    <span>$17.60</span>
+                                </p>
                             </div>
                         </div>
-
                     </div>
                 </div>
-            </section>
-
-
+            </div>
+            <iframe name="dummyframe" id="dummyframe"></iframe>
 
             <section className="ftco-section bg-light">
                 <div className="container">
                     <div className="row justify-content-center mb-3 pb-3">
                         <div className="col-md-12 heading-section text-center">
                             <h1 className="big">Наборы</h1>
-                            <h2 className="mb-4">Популярное</h2>
+                            <h2 className="mb-4">Популярные</h2>
                         </div>
                     </div>
                 </div>
