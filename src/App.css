@@ -7580,6 +7580,9 @@ h1, h2, h3, h4, h5,
         color: #000000; }
   .hero-wrap.hero-bread {
     padding: 7em 0; }
+@media (max-width: 991.98px) {
+  .hero-wrap.hero-bread {
+    padding: 4em 0; } }
 
 .mouse {
   position: absolute;
@@ -7874,7 +7877,12 @@ h1, h2, h3, h4, h5,
         text-decoration: line-through;
         color: #b3b3b3; }
       .product .text p.price span.price-sale {
-        color: #000000; }
+        color: #000000;
+        background-color: rgba(241, 184, 196, 0.5);
+        padding: 10px;
+        border-radius: 4px;
+
+      }
     .product .text .pricing, .product .text .rating {
       width: 50%; }
     .product .text .bottom-area {
@@ -9143,4 +9151,8 @@ textarea.form-control {
   font-size: 16px;
   padding-bottom: 5px;
   border-bottom: 1px solid #e0e1e1;
+}
+
+.catalogName{
+  min-height: 75px;
 }

@@ -1,95 +1,100 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import muslinTwo_yg from "../img/catalog/muslinTwo_yg";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.scss';
+import "swiper/components/pagination/pagination.min.css";
+import SwiperCore, {
+    Pagination
+} from 'swiper/core';
+SwiperCore.use([Pagination]);
 
-const Catalogue = () => {
-    const productsData = [
+const Catalogue = (props) => {
+    const {data, rates, desc} = props;
+
+    const imagesArr = [
         {
-            id: "1",
-            name: "Grumpy Cat Poster",
-            description: "Everyone's favorite cat who loves to hate",
-            price: 15
-        },
-        {
-            id: "2",
-            name: "Stretch Armstrong",
-            description:
-                "He bends! He stretches! He even ties in knots, but always returns to his original shape!",
-            price: 20
-        },
-        {
-            id: "3",
-            name: "Hungry Hungry Hippos Game",
-            description:
-                "It's a race, it's a chase, hurry up and feed their face! Who will win? No one knows! Feed the hungry hip-ip-pos!",
-            price: 30
-        },
-        {
-            id: "4",
-            name: "Crossfire board game",
-            description: "You'll get caught up in the crossfire!",
-            price: 35
-        },
-        {
-            id: "1",
-            name: "Grumpy Cat Poster",
-            description: "Everyone's favorite cat who loves to hate",
-            price: 15
-        },
-        {
-            id: "2",
-            name: "Stretch Armstrong",
-            description:
-                "He bends! He stretches! He even ties in knots, but always returns to his original shape!",
-            price: 20
-        },
-        {
-            id: "3",
-            name: "Hungry Hungry Hippos Game",
-            description:
-                "It's a race, it's a chase, hurry up and feed their face! Who will win? No one knows! Feed the hungry hip-ip-pos!",
-            price: 30
-        },
-        {
-            id: "4",
-            name: "Crossfire board game",
-            description: "You'll get caught up in the crossfire!",
-            price: 35
+            imgTitle: "muslinTwo_yg",
+            array: muslinTwo_yg
         }
-    ]
+    ];
 
+    const getCatalogItems = () => {
+        const newArr = [];
 
-    const products = productsData.map(product => {
+        data.map(items => {
+            // const randomArray = (arr) => {
+            //     const shuffled = arr.sort(() => 0.5 - Math.random());
+            //     return shuffled;
+            // }
+            // items.items = randomArray(items.items);
+
+            items.items.map((elem, i) => {
+                const currentImageArr = imagesArr.find(el => el.imgTitle === items.name).array;
+                const currentImage = currentImageArr.find(el => el.type === elem.type).noPostcard;
+                const currentImagePostcard = currentImageArr.find(el => el.type === elem.type).withPostcard;
+                const currentName = (`${items.color} набор: `).concat(rates.rates.find(el => el.type === elem.type).name);
+                const currentRate = rates.rates.find(el => el.type === elem.type).rate;
+
+                newArr.push({
+                    id: elem.id,
+                    type: elem.type,
+                    name: currentName,
+                    rate: currentRate,
+                    noPostcard: currentImage,
+                    withPostcard: currentImagePostcard
+                })
+                return elem;
+            })
+        })
+
+        return newArr;
+    }
+
+    const catalogItems = getCatalogItems();
+    console.log(catalogItems)
+
+    const products = catalogItems.map(elem => {
+console.log(elem)
         return (
-
-            <div key={product.id}className="col-sm col-md-6 col-lg-3 ">
+            <div key={elem.id}className="col-sm col-md-6 col-lg-3 ">
                 <div className="product">
                     <Link className="img-prod"
-                          to={`/catalog/${product.id}`}>
-                        {product.name}
-                        <img className="img-fluid"
-                             src="images/product-1.jpg"
-                             alt="Colorlib Template"/>
+                          to={`/catalog/${elem.id}`}>
+                        <Swiper
+                            className="img-fluid"
+                            spaceBetween={20}
+                            slidesPerView={1}
+                            navigation
+                            pagination={{ clickable: true }}
+                            scrollbar={{ draggable: true }}
+                            loop={true}
+                        >
+                            <SwiperSlide><img className="img-fluid"
+                                              src={elem.noPostcard}
+                                              alt={elem.name}/></SwiperSlide>
+                            <SwiperSlide><img className="img-fluid"
+                                              src={elem.withPostcard}
+                                              alt={elem.name}/></SwiperSlide>
+                        </Swiper>
                     </Link>
                     <div className="text py-3 px-3">
-                        <h3><a href="#">Young Woman Wearing Dress</a></h3>
+                        <h3 className="catalogName"><a href="#">{elem.name}</a></h3>
                         <div className="d-flex">
                             <div className="pricing">
-                                <p className="price"><span className="mr-2 price-dc">$120.00</span><span
-                                    className="price-sale">{product.price}</span></p>
+                                <p className="price"><span className="price-sale">{elem.rate} руб</span></p>
                             </div>
                         </div>
                         <hr/>
                         <p className="bottom-area d-flex">
-                            <a href="#" className="add-to-cart"><span>Add to cart <i
+                            <a href="#" className="add-to-cart"><span>В корзину <i
                                 className="ion-ios-add ml-1"></i></span></a>
-                            <a href="#" className="ml-auto"><span><i
-                                className="ion-ios-heart-empty"></i></span></a>
                         </p>
                     </div>
                 </div>
             </div>
-        );
-    });
+        )
+    })
 
     return (
         <div className="contact">

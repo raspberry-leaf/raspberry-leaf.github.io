@@ -10,6 +10,7 @@ import Delivery from "./Delivery";
 import Cart from "./Cart";
 
 const Main = (props) => {
+    const {data, rates, desc} = props;
 
     return (
         <div className="App">
@@ -18,7 +19,9 @@ const Main = (props) => {
                 <Switch>
                     <Route path="/" exact component={() => <Home />} />
                     <Route path="/about" exact component={() => <About />} />
-                    <Route path="/catalog" exact component={() => <Catalogue />} />
+                    <Route path="/catalog" exact component={() => <Catalogue data={data}
+                                                                             rates={rates}
+                                                                             desc={desc}/>} />
                     <Route path="/catalog/:catalogId">
                         <CatalogueDetail />
                     </Route>

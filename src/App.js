@@ -2,9 +2,13 @@ import Main from "./views/Main";
 import "./App.css";
 
 const App = (props) => {
+  const {data, rates, desc} = props;
 
   return (
-   	<Main data={props.data} rate={props.rate}/>
+   	<Main data={data}
+          rates={rates}
+          desc={desc}
+    />
   );
 }
 
