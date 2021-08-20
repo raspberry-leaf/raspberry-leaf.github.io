@@ -8,20 +8,24 @@ import Catalogue from "./Catalogue";
 import CatalogueDetail from "./CatalogueDetail";
 import Delivery from "./Delivery";
 import Cart from "./Cart";
+import Context from "../Context";
 
 const Main = (props) => {
     const {data, rates, desc} = props;
 
     return (
         <div className="App">
+            <Context.Provider value={{
+                data,
+                rates,
+                desc
+            }}>
             <Router>
                 <Navigation />
                 <Switch>
                     <Route path="/" exact component={() => <Home />} />
                     <Route path="/about" exact component={() => <About />} />
-                    <Route path="/catalog" exact component={() => <Catalogue data={data}
-                                                                             rates={rates}
-                                                                             desc={desc}/>} />
+                    <Route path="/catalog" exact component={() => <Catalogue/>} />
                     <Route path="/catalog/:catalogId">
                         <CatalogueDetail />
                     </Route>
@@ -31,6 +35,7 @@ const Main = (props) => {
                 </Switch>
                 <Footer />
             </Router>
+            </Context.Provider>
         </div>
     );
 }

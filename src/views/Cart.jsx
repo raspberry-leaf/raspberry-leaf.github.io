@@ -1,4 +1,5 @@
 import React from "react";
+import PageTop from "../components/PageTop";
 
 const Cart = () => {
     function handleSubmit() {
@@ -7,15 +8,8 @@ const Cart = () => {
 
     return (
         <div className="cart">
-            <div className="hero-wrap hero-bread hero-rasp-cart">
-                <div className="container">
-                    <div className="row no-gutters slider-text align-items-center justify-content-center">
-                        <div className="col-md-9 text-center">
-                            <h1 className="mb-0 bread">Корзина</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <PageTop title={"Корзина"}
+                     imageName={"cart"}/>
             <div className="ftco-section ftco-cart">
                 <div className="container">
                     <div className="row pt-5">
