@@ -4,6 +4,7 @@ import CatalogueCard from "../components/CatalogueCard";
 import Context from "../Context";
 import PageTop from "../components/PageTop";
 import Filter from "../components/Filter";
+import Pagination from "../components/Pagination";
 
 const Catalogue = () => {
     const {data, rates, desc} = useContext(Context);
@@ -14,15 +15,16 @@ const Catalogue = () => {
             array: muslinTwo_yg
         }
     ];
+
+    const randomArray = (arr) => {
+        const shuffled = arr.sort(() => 0.5 - Math.random());
+        return shuffled;
+    }
+
     const getCatalogItems = () => {
         const newArr = [];
 
         data.map(items => {
-            // const randomArray = (arr) => {
-            //     const shuffled = arr.sort(() => 0.5 - Math.random());
-            //     return shuffled;
-            // }
-            // items.items = randomArray(items.items);
 
             items.items.map((elem, i) => {
                 const currentImageArr = imagesArr.find(el => el.imgTitle === items.name).array;
@@ -37,16 +39,24 @@ const Catalogue = () => {
                     name: currentName,
                     rate: currentRate,
                     noPostcard: currentImage,
-                    withPostcard: currentImagePostcard
+                    withPostcard: currentImagePostcard,
+                    show: i <= 7,
+                    showRate: true
                 })
                 return elem;
             })
         })
 
-        return newArr;
+        return randomArray(newArr);
     }
     const [catalogItems, setCatalogItems] = useState(() => getCatalogItems());
+    const [pagination, setPagination] = useState({
+        current: 0,
+        count: 8,
+        array: Array.from(Array(Math.ceil(catalogItems.length/8)).keys())
+    })
 
+console.log(pagination)
     return (
         <div className="contact">
             <div>
@@ -55,32 +65,24 @@ const Catalogue = () => {
                 <section className="ftco-section bg-light">
 
                     <div className="container-fluid">
-                        <div className="row">
-                            <Filter catalogItems={catalogItems}
-                                    setCatalogItems={setCatalogItems}/>
-                        </div>
+                        <Filter catalogItems={catalogItems}
+                                randomArray={randomArray}
+                                pagination={pagination}
+                                setPagination={setPagination}
+                                setCatalogItems={setCatalogItems}/>
                         <div className="row">
                             {catalogItems.map((elem,i) => {
-                                return <CatalogueCard key={i}
-                                                      postCard={rates.postcard}
-                                                      elem={elem}/>
+                                if (elem.show && elem.showRate) {
+                                    return <CatalogueCard key={i}
+                                                          postCard={rates.postcard}
+                                                          elem={elem}/>
+                                }
                             })}
                         </div>
-                        <div className="row mt-5">
-                            <div className="col text-center">
-                                <div className="block-27">
-                                    <ul>
-                                        <li><a href="#">&lt;</a></li>
-                                        <li className="active"><span>1</span></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#">&gt;</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        <Pagination pagination={pagination}
+                                    setPagination={setPagination}
+                                    catalogItems={catalogItems}
+                                    setCatalogItems={setCatalogItems}/>
                     </div>
                 </section>
 

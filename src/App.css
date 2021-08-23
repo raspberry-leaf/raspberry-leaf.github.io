@@ -9156,3 +9156,9 @@ textarea.form-control {
 .catalogName{
   min-height: 72px;
 }
+
+.customFilter{
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}

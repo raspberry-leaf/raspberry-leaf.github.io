@@ -34,6 +34,70 @@
         {
           "id": "20210801-08",
           "type": "muslinTwoEarsBib"
+        },
+        {
+          "id": "20210801-01",
+          "type": "muslinTwo"
+        },
+        {
+          "id": "20210801-02",
+          "type": "muslinTwoBibsTwo"
+        },
+        {
+          "id": "20210801-03",
+          "type": "muslinTwoBibsTwoEars"
+        },
+        {
+          "id": "20210801-04",
+          "type": "muslinTwoBunny"
+        },
+        {
+          "id": "20210801-05",
+          "type": "muslinTwoBunnyEars"
+        },
+        {
+          "id": "20210801-06",
+          "type": "muslinTwoBunnyEarsBib"
+        },
+        {
+          "id": "20210801-07",
+          "type": "muslinTwoEars"
+        },
+        {
+          "id": "20210801-08",
+          "type": "muslinTwoEarsBib"
+        },
+        {
+          "id": "20210801-01",
+          "type": "muslinTwo"
+        },
+        {
+          "id": "20210801-02",
+          "type": "muslinTwoBibsTwo"
+        },
+        {
+          "id": "20210801-03",
+          "type": "muslinTwoBibsTwoEars"
+        },
+        {
+          "id": "20210801-04",
+          "type": "muslinTwoBunny"
+        },
+        {
+          "id": "20210801-05",
+          "type": "muslinTwoBunnyEars"
+        },
+        {
+          "id": "20210801-06",
+          "type": "muslinTwoBunnyEarsBib"
+        },
+        {
+          "id": "20210801-07",
+          "type": "muslinTwoEars"
+        },
+        {
+          "id": "20210801-08",
+          "type": "muslinTwoEarsBib"
         }
       ]
     }

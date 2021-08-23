@@ -3,7 +3,6 @@ import present from "../img/img_present.jpg";
 import Checkbox from "@material-ui/core/Checkbox";
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { withStyles } from '@material-ui/core/styles';
-import { green } from '@material-ui/core/colors';
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
@@ -26,7 +25,7 @@ const CustomCheckbox = withStyles({
 const CatalogueCard = (props) => {
     const [checked, setChecked] = useState(false);
     const {elem,postCard} = props;
-console.log(postCard)
+
     return (
         <div key={elem.id}className="col-sm col-md-6 col-lg-3 ">
             <div className="product">
