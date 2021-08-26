@@ -1,72 +1,8 @@
 [
-    {
+  {
       "name": "muslinTwo_yg",
-      "color": "Солнечный и травяной",
+      "color": "солнечный и травяной",
       "items": [
-        {
-          "id": "20210801-01",
-          "type": "muslinTwo"
-        },
-        {
-          "id": "20210801-02",
-          "type": "muslinTwoBibsTwo"
-        },
-        {
-          "id": "20210801-03",
-          "type": "muslinTwoBibsTwoEars"
-        },
-        {
-          "id": "20210801-04",
-          "type": "muslinTwoBunny"
-        },
-        {
-          "id": "20210801-05",
-          "type": "muslinTwoBunnyEars"
-        },
-        {
-          "id": "20210801-06",
-          "type": "muslinTwoBunnyEarsBib"
-        },
-        {
-          "id": "20210801-07",
-          "type": "muslinTwoEars"
-        },
-        {
-          "id": "20210801-08",
-          "type": "muslinTwoEarsBib"
-        },
-        {
-          "id": "20210801-01",
-          "type": "muslinTwo"
-        },
-        {
-          "id": "20210801-02",
-          "type": "muslinTwoBibsTwo"
-        },
-        {
-          "id": "20210801-03",
-          "type": "muslinTwoBibsTwoEars"
-        },
-        {
-          "id": "20210801-04",
-          "type": "muslinTwoBunny"
-        },
-        {
-          "id": "20210801-05",
-          "type": "muslinTwoBunnyEars"
-        },
-        {
-          "id": "20210801-06",
-          "type": "muslinTwoBunnyEarsBib"
-        },
-        {
-          "id": "20210801-07",
-          "type": "muslinTwoEars"
-        },
-        {
-          "id": "20210801-08",
-          "type": "muslinTwoEarsBib"
-        },
         {
           "id": "20210801-01",
           "type": "muslinTwo"
@@ -100,6 +36,44 @@
           "type": "muslinTwoEarsBib"
         }
       ]
-    }
+    },
+  {
+    "name": "base_rose",
+    "color": "пыльная роза",
+    "items": [
+      {
+        "id": "20210827-01",
+        "type": "base"
+      },
+      {
+        "id": "20210827-02",
+        "type": "baseBunny"
+      },
+      {
+        "id": "20210827-03",
+        "type": "baseBunnyCrochet"
+      },
+      {
+        "id": "20210827-04",
+        "type": "baseBunnyCrochetRattle"
+      },
+      {
+        "id": "20210827-05",
+        "type": "baseBunnyRattle"
+      },
+      {
+        "id": "20210827-06",
+        "type": "baseCrochet"
+      },
+      {
+        "id": "20210827-07",
+        "type": "baseCrochetRattle"
+      },
+      {
+        "id": "20210827-08",
+        "type": "baseRattle"
+      }
+    ]
+  }
 ]
 

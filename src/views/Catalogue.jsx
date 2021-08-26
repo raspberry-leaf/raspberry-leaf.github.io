@@ -1,5 +1,6 @@
 import React, {useContext, useState} from "react";
 import muslinTwo_yg from "../img/catalog/muslinTwo_yg";
+import base_rose from "../img/catalog/base_rose";
 import CatalogueCard from "../components/CatalogueCard";
 import Context from "../Context";
 import PageTop from "../components/PageTop";
@@ -13,6 +14,10 @@ const Catalogue = () => {
         {
             imgTitle: "muslinTwo_yg",
             array: muslinTwo_yg
+        },
+        {
+            imgTitle: "base_rose",
+            array: base_rose
         }
     ];
 
@@ -30,7 +35,7 @@ const Catalogue = () => {
                 const currentImageArr = imagesArr.find(el => el.imgTitle === items.name).array;
                 const currentImage = currentImageArr.find(el => el.type === elem.type).noPostcard;
                 const currentImagePostcard = currentImageArr.find(el => el.type === elem.type).withPostcard;
-                const currentName = (`${items.color} набор: `).concat(rates.rates.find(el => el.type === elem.type).name);
+                const currentName = (`Набор ${items.color}: `).concat(rates.rates.find(el => el.type === elem.type).name);
                 const currentRate = rates.rates.find(el => el.type === elem.type).rate;
 
                 newArr.push({
