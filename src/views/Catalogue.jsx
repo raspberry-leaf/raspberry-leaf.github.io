@@ -2,7 +2,11 @@ import React, {useContext, useState} from "react";
 import muslinTwo_yg from "../img/catalog/muslinTwo_yg";
 import muslinTwo_rg from "../img/catalog/muslinTwo_rg";
 import base_rose from "../img/catalog/base_rose";
+import base_green from "../img/catalog/base_green";
 import base_lemon from "../img/catalog/base_lemon";
+import base_grey from "../img/catalog/base_grey";
+import baseCotton_flowers from "../img/catalog/baseCotton_flowers";
+import baseCotton_cotton from "../img/catalog/baseCotton_cotton";
 import CatalogueCard from "../components/CatalogueCard";
 import Context from "../Context";
 import PageTop from "../components/PageTop";
@@ -28,6 +32,22 @@ const Catalogue = () => {
         {
             imgTitle: "base_lemon",
             array: base_lemon
+        },
+        {
+            imgTitle: "base_green",
+            array: base_green
+        },
+        {
+            imgTitle: "base_grey",
+            array: base_grey
+        },
+        {
+            imgTitle: "baseCotton_flowers",
+            array: baseCotton_flowers
+        },
+        {
+            imgTitle: "baseCotton_cotton",
+            array: baseCotton_cotton
         }
     ];
 

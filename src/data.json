@@ -150,6 +150,126 @@
         "type": "baseRattle"
       }
     ]
+  },
+  {
+    "name": "base_green",
+    "color": "травяной",
+    "items": [
+      {
+        "id": "20210823-01",
+        "type": "base"
+      },
+      {
+        "id": "20210823-02",
+        "type": "baseBunny"
+      },
+      {
+        "id": "20210823-03",
+        "type": "baseBunnyCrochet"
+      },
+      {
+        "id": "20210823-04",
+        "type": "baseBunnyCrochetRattle"
+      },
+      {
+        "id": "20210823-05",
+        "type": "baseBunnyRattle"
+      },
+      {
+        "id": "20210823-06",
+        "type": "baseCrochet"
+      },
+      {
+        "id": "20210823-07",
+        "type": "baseCrochetRattle"
+      },
+      {
+        "id": "20210823-08",
+        "type": "baseRattle"
+      }
+    ]
+  },
+  {
+    "name": "base_grey",
+    "color": "дымчатый",
+    "items": [
+      {
+        "id": "20210723-01",
+        "type": "base"
+      },
+      {
+        "id": "20210723-02",
+        "type": "baseBunny"
+      },
+      {
+        "id": "20210723-03",
+        "type": "baseBunnyCrochet"
+      },
+      {
+        "id": "20210723-04",
+        "type": "baseBunnyCrochetRattle"
+      },
+      {
+        "id": "20210723-05",
+        "type": "baseBunnyRattle"
+      },
+      {
+        "id": "20210723-06",
+        "type": "baseCrochet"
+      },
+      {
+        "id": "20210723-07",
+        "type": "baseCrochetRattle"
+      },
+      {
+        "id": "20210723-08",
+        "type": "baseRattle"
+      }
+    ]
+  },
+  {
+    "name": "baseCotton_flowers",
+    "color": "цветочный",
+    "items": [
+      {
+        "id": "20210623-01",
+        "type": "baseCotton"
+      },
+      {
+        "id": "20210623-02",
+        "type": "baseCottonBunny"
+      },
+      {
+        "id": "20210623-03",
+        "type": "baseCottonEars"
+      },
+      {
+        "id": "20210623-04",
+        "type": "baseCottonBunnyEars"
+      }
+    ]
+  },
+  {
+    "name": "baseCotton_cotton",
+    "color": "цветущий хлопок",
+    "items": [
+      {
+        "id": "20210523-01",
+        "type": "baseCotton"
+      },
+      {
+        "id": "20210523-02",
+        "type": "baseCottonBunny"
+      },
+      {
+        "id": "20210523-03",
+        "type": "baseCottonEars"
+      },
+      {
+        "id": "20210523-04",
+        "type": "baseCottonBunnyEars"
+      }
+    ]
   }
 ]
 
