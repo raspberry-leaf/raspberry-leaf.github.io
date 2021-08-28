@@ -1,6 +1,8 @@
 import React, {useContext, useState} from "react";
 import muslinTwo_yg from "../img/catalog/muslinTwo_yg";
+import muslinTwo_rg from "../img/catalog/muslinTwo_rg";
 import base_rose from "../img/catalog/base_rose";
+import base_lemon from "../img/catalog/base_lemon";
 import CatalogueCard from "../components/CatalogueCard";
 import Context from "../Context";
 import PageTop from "../components/PageTop";
@@ -16,8 +18,16 @@ const Catalogue = () => {
             array: muslinTwo_yg
         },
         {
+            imgTitle: "muslinTwo_rg",
+            array: muslinTwo_rg
+        },
+        {
             imgTitle: "base_rose",
             array: base_rose
+        },
+        {
+            imgTitle: "base_lemon",
+            array: base_lemon
         }
     ];
 

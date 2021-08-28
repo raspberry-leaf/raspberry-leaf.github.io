@@ -38,6 +38,44 @@
       ]
     },
   {
+    "name": "muslinTwo_rg",
+    "color": "пыльная роза и дымчатый",
+    "items": [
+      {
+        "id": "20210901-01",
+        "type": "muslinTwo"
+      },
+      {
+        "id": "20210901-02",
+        "type": "muslinTwoBibsTwo"
+      },
+      {
+        "id": "20210901-03",
+        "type": "muslinTwoBibsTwoEars"
+      },
+      {
+        "id": "20210901-04",
+        "type": "muslinTwoBunny"
+      },
+      {
+        "id": "20210901-05",
+        "type": "muslinTwoBunnyEars"
+      },
+      {
+        "id": "20210901-06",
+        "type": "muslinTwoBunnyEarsBib"
+      },
+      {
+        "id": "20210901-07",
+        "type": "muslinTwoEars"
+      },
+      {
+        "id": "20210901-08",
+        "type": "muslinTwoEarsBib"
+      }
+    ]
+  },
+  {
     "name": "base_rose",
     "color": "пыльная роза",
     "items": [
@@ -71,6 +109,44 @@
       },
       {
         "id": "20210827-08",
+        "type": "baseRattle"
+      }
+    ]
+  },
+  {
+    "name": "base_lemon",
+    "color": "лимонный",
+    "items": [
+      {
+        "id": "20210828-01",
+        "type": "base"
+      },
+      {
+        "id": "20210828-02",
+        "type": "baseBunny"
+      },
+      {
+        "id": "20210828-03",
+        "type": "baseBunnyCrochet"
+      },
+      {
+        "id": "20210828-04",
+        "type": "baseBunnyCrochetRattle"
+      },
+      {
+        "id": "20210828-05",
+        "type": "baseBunnyRattle"
+      },
+      {
+        "id": "20210828-06",
+        "type": "baseCrochet"
+      },
+      {
+        "id": "20210828-07",
+        "type": "baseCrochetRattle"
+      },
+      {
+        "id": "20210828-08",
         "type": "baseRattle"
       }
     ]
