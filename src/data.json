@@ -270,6 +270,50 @@
         "type": "baseCottonBunnyEars"
       }
     ]
+  },
+  {
+    "name": "blanket_beige",
+    "color": "бежевый",
+    "items": [
+      {
+        "id": "20210831-01",
+        "type": "blanket"
+      },
+      {
+        "id": "20210831-02",
+        "type": "blanketBunny"
+      },
+      {
+        "id": "20210831-03",
+        "type": "blanketBase"
+      },
+      {
+        "id": "20210831-04",
+        "type": "blanketBaseBunny"
+      }
+    ]
+  },
+  {
+    "name": "blanket_grey",
+    "color": "дымчатый",
+    "items": [
+      {
+        "id": "20210831-05",
+        "type": "blanket"
+      },
+      {
+        "id": "20210831-06",
+        "type": "blanketBunny"
+      },
+      {
+        "id": "20210831-07",
+        "type": "blanketBase"
+      },
+      {
+        "id": "20210831-08",
+        "type": "blanketBaseBunny"
+      }
+    ]
   }
 ]
 

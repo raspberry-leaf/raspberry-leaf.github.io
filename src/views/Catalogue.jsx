@@ -7,6 +7,8 @@ import base_lemon from "../img/catalog/base_lemon";
 import base_grey from "../img/catalog/base_grey";
 import baseCotton_flowers from "../img/catalog/baseCotton_flowers";
 import baseCotton_cotton from "../img/catalog/baseCotton_cotton";
+import blanket_beige from "../img/catalog/blanket_beige";
+import blanket_grey from "../img/catalog/blanket_grey";
 import CatalogueCard from "../components/CatalogueCard";
 import Context from "../Context";
 import PageTop from "../components/PageTop";
@@ -48,6 +50,14 @@ const Catalogue = () => {
         {
             imgTitle: "baseCotton_cotton",
             array: baseCotton_cotton
+        },
+        {
+            imgTitle: "blanket_beige",
+            array: blanket_beige
+        },
+        {
+            imgTitle: "blanket_grey",
+            array: blanket_grey
         }
     ];
 
