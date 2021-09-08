@@ -33,6 +33,7 @@ const Main = (props) => {
                     <Route path="/contact" exact component={() => <Contact />} />
                     <Route path="/cart" exact component={() => <Cart />} />
                 </Switch>
+
                 <Footer />
             </Router>
             </Context.Provider>

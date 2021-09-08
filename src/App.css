@@ -7299,7 +7299,7 @@ h1, h2, h3, h4, h5,
   color: #f1b8c4 !important; }
 
 .ftco-navbar-light {
-  background: transparent !important;
+  background: rgba(255, 255, 255, 0.5) !important;
   position: absolute;
   top: 20px;
   left: 0;
@@ -7788,10 +7788,10 @@ h1, h2, h3, h4, h5,
   position: relative; }
   @media (min-width: 768px) {
     .wrap-about {
-      padding-left: 6em; } }
+      padding-left: 4em; } }
   .wrap-about .heading-section-bold h2 {
     text-transform: uppercase;
-    font-size: 70px;
+    font-size: 42px;
     font-weight: 400;
     line-height: 1;
     font-family: "Roboto Condensed", Arial, sans-serif;
@@ -9155,10 +9155,37 @@ textarea.form-control {
 
 .catalogName{
   min-height: 72px;
+  margin-bottom: 10px !important;
 }
 
 .customFilter{
   display: flex;
   align-items: center;
   font-size: 1rem;
+}
+
+.btn-local {
+  display: block;
+  max-width: 250px;
+  margin: 10px auto;
+  color: #000000 !important;
+}
+.bgMain {
+  background-image: url('./img/bg_main.jpg');
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+
+@media (max-width: 1023px) {
+  .bgMain {
+   display: none;
+} }
+
+.homeSection {
+  margin: 60px auto;
+  max-width: 920px;
 }
