@@ -68,7 +68,7 @@ const Filter = (props) => {
     const {data, rates, desc} = useContext(Context);
     const {catalogItems, randomArray, setCatalogItems, setPagination, pagination} = props;
     const classes = useStyles();
-    console.log(catalogItems)
+
     const[valueChoice, setValueChoice] = useState('popular');
 
     const ratesArr = () => {
@@ -82,46 +82,70 @@ const Filter = (props) => {
 
     const[valueRate, setValueRate] = useState([minRate, maxRate]);
 
+    const handlePagination = (newData) => {
+        newData.map((el, i) => {
+            el.show = i <= 7;
+            return el;
+        });
+        return newData;
+    }
+
+    const handleLowHighRate = (data, rate) => {
+        data.sort(function(a, b) {
+            return rate === "toHighRate" ? a.rate - b.rate : b.rate - a.rate;
+        });
+        data = data.sort(function(a, b) {
+            return (a.showRate === b.showRate)? 0 : a.showRate? -1 : 1;
+        });
+        setCatalogItems(handlePagination(data));
+    }
+
+    const handlePopular = (data) => {
+        let newData = randomArray(data);
+        newData = newData.sort(function(a, b) {
+            return (a.showRate === b.showRate)? 0 : a.showRate? -1 : 1;
+        });
+        setCatalogItems(handlePagination(newData))
+    }
+
     const handleChangeChoice = (value) => {
-        const data = [...catalogItems];
-
-        const handlePagination = (newData) => {
-            newData.map((el, i) => {
-                el.show = i >= pagination.current*pagination.count && i < (pagination.current + 1)*pagination.count;
-                return el;
-            });
-            return newData;
-        }
-
+        let data = [...catalogItems];
         if (value === "toLowRate") {
-            data.sort(function(a, b) {
-                return b.rate - a.rate;
-            });
-            setCatalogItems(handlePagination(data));
+            handleLowHighRate(data, "toLowRate")
         } else if (value === "toHighRate") {
-            data.sort(function(a, b) {
-                return a.rate - b.rate;
-            });
-            setCatalogItems(handlePagination(data));
+            handleLowHighRate(data, "toHighRate")
         } else {
-            const newData = randomArray(data);
-            setCatalogItems(handlePagination(newData))
+            handlePopular(data)
         }
+        setPagination(prevState=>({...prevState, current: 0}));
         setValueChoice(value)
     };
 
     const handleChangeRate = (event, newValue) => {
-        const data = [...catalogItems];
-           console.log(newValue)
+        let data = [...catalogItems];
+
         data.map(el => {
             el.showRate = el.rate <= newValue[1] && el.rate >= newValue[0];
             return el;
         })
 
-        setCatalogItems(data);
+        data = data.sort(function(a, b) {
+            return (a.showRate === b.showRate)? 0 : a.showRate? - 1 : 1;
+        });
+
+        data.map((el, i) => {
+            el.show = i <= 7;
+            return el;
+        })
+
+        if (valueChoice === "popular") {
+            handlePopular(data)
+        } else {
+            handleLowHighRate(data, valueChoice)
+        }
         setValueRate(newValue);
         setPagination(prevState=>({...prevState,
-
+            current: 0,
             array: Array.from(Array(Math.ceil(data.filter(el => el.showRate).length/pagination.count)).keys())
         }));
     };

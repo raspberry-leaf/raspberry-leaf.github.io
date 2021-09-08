@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import muslinTwo_yg from "../img/catalog/muslinTwo_yg";
 import muslinTwo_rg from "../img/catalog/muslinTwo_rg";
 import base_rose from "../img/catalog/base_rose";
@@ -69,7 +69,7 @@ const Catalogue = () => {
     const getCatalogItems = () => {
         const newArr = [];
 
-        data.map(items => {
+        data.map((items,j) => {
 
             items.items.map((elem, i) => {
                 const currentImageArr = imagesArr.find(el => el.imgTitle === items.name).array;
@@ -85,7 +85,7 @@ const Catalogue = () => {
                     rate: currentRate,
                     noPostcard: currentImage,
                     withPostcard: currentImagePostcard,
-                    show: i <= 7,
+                    show: j === 0,
                     showRate: true
                 })
                 return elem;
@@ -101,14 +101,12 @@ const Catalogue = () => {
         array: Array.from(Array(Math.ceil(catalogItems.length/8)).keys())
     })
 
-console.log(pagination)
     return (
         <div className="contact">
             <div>
                 <PageTop title={"Каталог"}
                          imageName={"catalog"}/>
                 <section className="ftco-section bg-light">
-
                     <div className="container-fluid">
                         <Filter catalogItems={catalogItems}
                                 randomArray={randomArray}
@@ -116,13 +114,17 @@ console.log(pagination)
                                 setPagination={setPagination}
                                 setCatalogItems={setCatalogItems}/>
                         <div className="row">
-                            {catalogItems.map((elem,i) => {
+                            {catalogItems.filter(elem => elem.show && elem.showRate).length > 0 &&
+                                catalogItems.map((elem,i) => {
                                 if (elem.show && elem.showRate) {
                                     return <CatalogueCard key={i}
                                                           postCard={rates.postcard}
                                                           elem={elem}/>
                                 }
                             })}
+                            {catalogItems.filter(elem => elem.show && elem.showRate).length === 0 &&
+                                <p>К сожалению, товаров с такими параметрами у нас нет</p>
+                            }
                         </div>
                         <Pagination pagination={pagination}
                                     setPagination={setPagination}
