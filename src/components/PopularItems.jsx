@@ -119,6 +119,7 @@ const PopularItems = () => {
                     if (i < 12) {
                         return <SwiperSlide key={i}><CatalogueCard popular={true}
                                               postCard={rates.postcard}
+                                                                   catalogItems={catalogItems}
                                                            elem={elem}/></SwiperSlide>
                     }
                 })}

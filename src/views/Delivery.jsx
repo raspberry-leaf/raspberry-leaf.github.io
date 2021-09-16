@@ -1,5 +1,6 @@
 import React from "react";
 import PageTop from "../components/PageTop";
+import PopularItems from "../components/PopularItems";
 
 const Delivery = () => {
     return (
@@ -15,7 +16,7 @@ const Delivery = () => {
                                     <h2 className="mb-4">Raspberry <br/>Leaf <br/> <span>доставка бесплатно</span></h2>
                                 </div>
                             </div>
-                            <div className="pb-md-5">
+                            <div>
                                 <p>Наборы Raspberry Leaf доставляются бесплатно по всей России.</p>
                                 <p>При оформлении заказа в корзине или в Instagram сообщите следующие данные:
                                     <ul>
@@ -34,6 +35,7 @@ const Delivery = () => {
                     </div>
                 </div>
             </section>
+            <PopularItems/>
         </div>
     );
 }

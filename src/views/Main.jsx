@@ -9,16 +9,21 @@ import CatalogueDetail from "./CatalogueDetail";
 import Delivery from "./Delivery";
 import Cart from "./Cart";
 import Context from "../Context";
+import {useState} from "react";
 
 const Main = (props) => {
     const {data, rates, desc} = props;
+
+    const [state, setState] = useState({currentItem: '', gift: false, cart: []})
 
     return (
         <div className="App">
             <Context.Provider value={{
                 data,
                 rates,
-                desc
+                desc,
+                state,
+                setState
             }}>
             <Router>
                 <Navigation />

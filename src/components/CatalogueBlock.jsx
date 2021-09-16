@@ -112,6 +112,7 @@ const CatalogueBlock = () => {
                         catalogItems.map((elem,i) => {
                         if (elem.show && elem.showRate) {
                             return <CatalogueCard key={i}
+                                                  catalogItems={catalogItems}
                                                   postCard={rates.postcard}
                                                   elem={elem}/>
                         }

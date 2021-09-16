@@ -1,6 +1,6 @@
 import React from "react";
 import PageTop from "../components/PageTop";
-import ico_truck from "../img/ico_truck.svg"
+import PopularItems from "../components/PopularItems";
 
 function About() {
     return (
@@ -22,7 +22,7 @@ function About() {
                                     <h2 className="mb-4">Raspberry <br/>Leaf <br/> <span>онлайн магазин</span></h2>
                                 </div>
                             </div>
-                            <div className="pb-md-5">
+                            <div>
                                 <p>Raspberry Leaf - это небольшая творческая мастерская по созданию наборов для новорождённых.</p>
                                 <p>Меня зовут Елена и я идейный вдохновитель Raspberry Leaf. Реализацией занимается мастер своего дела со стажем работы более 35 лет. Она создаёт выкройки, шьёт комплекты, проверяет все строчки, следит за качеством тканей и наполнителей, а также вышивает в ручную каждого зайчонка.</p>
                                 <p>Вязаные грызунки и погремушки Raspberry Leaf - это моих рук дело. Вязать люблю с детства. Меня этому научила моя бабушка, а я этот навык довела до совершенства. </p>
@@ -79,6 +79,7 @@ function About() {
                     </div>
                 </div>
             </section>
+            <PopularItems/>
         </div>
     );
 }

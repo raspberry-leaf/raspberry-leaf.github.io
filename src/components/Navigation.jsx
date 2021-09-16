@@ -1,10 +1,12 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 import { Link, withRouter } from "react-router-dom";
 import main from "../img/img_main.png";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import Context from "../Context";
 
 const Navigation = (props) => {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+    const {state} = useContext(Context);
 
     return (
         <div className="navigation">
@@ -72,7 +74,7 @@ const Navigation = (props) => {
                                 }`}
                             >
                                 <Link className="nav-link nav-link_center" to="/cart">
-                                    <ShoppingCartIcon/> [0]
+                                    <ShoppingCartIcon/> [{state.cart.length}]
                                 </Link>
                             </li>
                         </ul>
