@@ -16,17 +16,13 @@ const Home = () => {
                                     </div>
                                 </div>
                                 <div className="pb-md-5">
-                                    <p>On her way she met a copy. The copy warned the Little Blind Text, that where it
-                                        came from it would have been rewritten a thousand times and everything that was
-                                        left from its origin would be the word "and" and the Little Blind Text should
-                                        turn around and return to its own, safe country. But nothing the copy said could
-                                        convince her and so it didn’t take long until a few insidious Copy Writers
-                                        ambushed her, made her drunk with Longe and Parole and dragged her into their
-                                        agency, where they abused her for their.</p>
-                                    <p>When she reached the first hills of the Italic Mountains, she had a last view
-                                        back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-                                        Village and the subline of her own road, the Line Lane. Pityful a rethoric
-                                        question ran over her cheek, then she continued her way.</p>
+                                    <p>Raspberry Leaf - это стильные подарочные наборы для малышей и их родителей.</p>
+                                    <p>В нашей мастерской вы найдёте уникальные и неповторимые комплекты ручной работы. Наборы состоят из натуральных и экологичных материалов.
+                                        Игрушки, грызунки, пелёнки и прочие элементы создаются мастером со стажем работы более 35 лет. Она разрабатывает выкройки, шьёт комплекты, проверяет все строчки, следит за качеством тканей и наполнителей, а также вышивает в ручную каждого зайчонка.
+                                    </p>
+                                    <p>Наборы можно заказать как для себя, так и <strong>в подарок</strong> на выписку, рождение малыша или крестины, добавив подарочную упаковку при выборе.<br/>
+                                    Каждый комплект доставляется <strong>бесплатно</strong> по всей России.</p>
+                                    <p>С Raspberry Leaf вы подарите не просто комплект для новорождённого, но и впечатление на долгие годы.</p>
                                 </div>
                             </div>
                         </div>

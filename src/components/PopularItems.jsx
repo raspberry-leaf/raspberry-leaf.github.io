@@ -18,6 +18,9 @@ import "swiper/components/pagination/pagination.min.css";
 import SwiperCore, {
     Pagination
 } from 'swiper/core';
+import Home from "../views/Home";
+import Catalogue from "../views/Catalogue";
+import {Link} from "react-router-dom";
 SwiperCore.use([Pagination]);
 
 const PopularItems = () => {
@@ -123,7 +126,9 @@ const PopularItems = () => {
             </div>
         </div>
         <div className="col-md-6 m-auto">
-            <a className="btn btn-primary py-3 px-4 w-100 btn-local">Посмотреть ещё</a>
+            <Link className="btn btn-primary py-3 px-4 w-100 btn-local" to="/catalog">
+                Посмотреть ещё
+            </Link>
         </div>
 
       </section>

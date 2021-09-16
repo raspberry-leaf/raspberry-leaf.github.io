@@ -2036,8 +2036,8 @@ fieldset:disabled a.btn {
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color: #212529;
-    background-color: #4ac7ea;
-    border-color: #3fc3e8; }
+    background-color:#f1b8c4;
+    border-color: #f1b8c4; }
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(120, 213, 239, 0.5);
@@ -7878,9 +7878,8 @@ h1, h2, h3, h4, h5,
         color: #b3b3b3; }
       .product .text p.price span.price-sale {
         color: #000000;
-        background-color: rgba(241, 184, 196, 0.5);
-        padding: 10px;
-        border-radius: 4px;
+        padding-bottom: 2px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 
       }
     .product .text .pricing, .product .text .rating {
@@ -8267,7 +8266,7 @@ textarea.form-control {
 
 .ftco-footer {
   font-size: 16px;
-  padding: 7em 0;
+  padding: 3em 0;
   color: #000000; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
@@ -9188,4 +9187,27 @@ textarea.form-control {
 .homeSection {
   margin: 60px auto;
   max-width: 920px;
+}
+
+.icon-instagram{
+  margin-right: 8px;
+}
+
+.icon-instagram img {
+  max-width: 40px;
+}
+
+.link-instagram {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #000000;
+}
+
+.add-to-cart {
+  line-height: 1;
+  color: #000000;
+  background-color: rgba(241, 184, 196, 0.5);
+  padding: 10px 15px;
+  border-radius: 4px;
 }
