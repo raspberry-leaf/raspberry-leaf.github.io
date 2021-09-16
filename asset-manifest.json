@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.fad78bbe.chunk.css",
-    "main.js": "/static/js/main.dd5395f2.chunk.js",
-    "main.js.map": "/static/js/main.dd5395f2.chunk.js.map",
+    "main.css": "/static/css/main.51397fc6.chunk.css",
+    "main.js": "/static/js/main.c3b810db.chunk.js",
+    "main.js.map": "/static/js/main.c3b810db.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4d25ba2e.js",
     "runtime-main.js.map": "/static/js/runtime-main.4d25ba2e.js.map",
     "static/css/2.0224afb0.chunk.css": "/static/css/2.0224afb0.chunk.css",
-    "static/js/2.eeb02022.chunk.js": "/static/js/2.eeb02022.chunk.js",
-    "static/js/2.eeb02022.chunk.js.map": "/static/js/2.eeb02022.chunk.js.map",
+    "static/js/2.6d00c460.chunk.js": "/static/js/2.6d00c460.chunk.js",
+    "static/js/2.6d00c460.chunk.js.map": "/static/js/2.6d00c460.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.0224afb0.chunk.css.map": "/static/css/2.0224afb0.chunk.css.map",
-    "static/css/main.fad78bbe.chunk.css.map": "/static/css/main.fad78bbe.chunk.css.map",
-    "static/js/2.eeb02022.chunk.js.LICENSE.txt": "/static/js/2.eeb02022.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/bgDelivery.7599fa41.png",
+    "static/css/main.51397fc6.chunk.css.map": "/static/css/main.51397fc6.chunk.css.map",
+    "static/js/2.6d00c460.chunk.js.LICENSE.txt": "/static/js/2.6d00c460.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/bg_main.44d85385.jpg",
     "static/media/favicon.ico": "/static/media/favicon.b4939079.ico",
+    "static/media/ico_instagram.e930bb76.png": "/static/media/ico_instagram.e930bb76.png",
     "static/media/img_baseBunnyCrochetRattle_green.63a63c5a.jpg": "/static/media/img_baseBunnyCrochetRattle_green.63a63c5a.jpg",
     "static/media/img_baseBunnyCrochetRattle_green_p.e707ab05.jpg": "/static/media/img_baseBunnyCrochetRattle_green_p.e707ab05.jpg",
     "static/media/img_baseBunnyCrochetRattle_grey.b5b07c4a.jpg": "/static/media/img_baseBunnyCrochetRattle_grey.b5b07c4a.jpg",
@@ -148,8 +149,8 @@
   "entrypoints": [
     "static/js/runtime-main.4d25ba2e.js",
     "static/css/2.0224afb0.chunk.css",
-    "static/js/2.eeb02022.chunk.js",
-    "static/css/main.fad78bbe.chunk.css",
-    "static/js/main.dd5395f2.chunk.js"
+    "static/js/2.6d00c460.chunk.js",
+    "static/css/main.51397fc6.chunk.css",
+    "static/js/main.c3b810db.chunk.js"
   ]
 }
