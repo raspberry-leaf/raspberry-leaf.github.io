@@ -74,13 +74,18 @@ const CatalogueBlock = () => {
                 const currentImage = currentImageArr.find(el => el.type === elem.type).noPostcard;
                 const currentImagePostcard = currentImageArr.find(el => el.type === elem.type).withPostcard;
                 const currentName = (`Набор ${items.color}: `).concat(rates.rates.find(el => el.type === elem.type).name);
-                const currentRate = rates.rates.find(el => el.type === elem.type).rate;
+                const currentRate = rates.rates.find(el => el.type === elem.type);
 
                 newArr.push({
                     id: elem.id,
                     type: elem.type,
                     name: currentName,
-                    rate: currentRate,
+                    shortName: `Набор ${items.color}`,
+                    shortDesc: rates.rates.find(el => el.type === elem.type).name,
+                    descPresent: currentRate.descBig ? rates.postcard.descBig : rates.postcard.descSmall,
+                    desc: currentRate.desc,
+                    itemsDesc: currentRate.itemsDesc,
+                    rate: currentRate.rate,
                     noPostcard: currentImage,
                     withPostcard: currentImagePostcard,
                     show: j === 0,

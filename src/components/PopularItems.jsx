@@ -18,8 +18,6 @@ import "swiper/components/pagination/pagination.min.css";
 import SwiperCore, {
     Pagination
 } from 'swiper/core';
-import Home from "../views/Home";
-import Catalogue from "../views/Catalogue";
 import {Link} from "react-router-dom";
 SwiperCore.use([Pagination]);
 
@@ -83,13 +81,18 @@ const PopularItems = () => {
                 const currentImage = currentImageArr.find(el => el.type === elem.type).noPostcard;
                 const currentImagePostcard = currentImageArr.find(el => el.type === elem.type).withPostcard;
                 const currentName = (`Набор ${items.color}: `).concat(rates.rates.find(el => el.type === elem.type).name);
-                const currentRate = rates.rates.find(el => el.type === elem.type).rate;
+                const currentRate = rates.rates.find(el => el.type === elem.type);
 
                 newArr.push({
                     id: elem.id,
                     type: elem.type,
                     name: currentName,
-                    rate: currentRate,
+                    shortName: `Набор ${items.color}`,
+                    shortDesc: rates.rates.find(el => el.type === elem.type).name,
+                    descPresent: currentRate.descBig ? rates.postcard.descBig : rates.postcard.descSmall,
+                    desc: currentRate.desc,
+                    itemsDesc: currentRate.itemsDesc,
+                    rate: currentRate.rate,
                     noPostcard: currentImage,
                     withPostcard: currentImagePostcard,
                     showRate: true
@@ -109,11 +112,27 @@ const PopularItems = () => {
             <div className="row">
                 <Swiper
                     className="img-fluid"
-                    spaceBetween={20}
-                    slidesPerView={4}
                     navigation
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
+                    breakpoints={{
+                        320: {
+                        slidesPerView: 1,
+                        spaceBetween: 5
+                    },
+                        525: {
+                        slidesPerView: 2,
+                        spaceBetween: 10
+                    },
+                        1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                        1200: {
+                            slidesPerView: 4,
+                            spaceBetween: 20
+                        }
+                    }}
                 >
                 {catalogItems.map((elem,i) => {
                     if (i < 12) {

@@ -7738,6 +7738,8 @@ h1, h2, h3, h4, h5,
     background: #f1b8c4;
     border: 1px solid #f1b8c4;
     color: #fff; }
+.btn.btn-left {
+  margin: 10px 0; }
     .btn.btn-primary:hover {
       border: 1px solid #f1b8c4;
       background: transparent;
@@ -7916,18 +7918,7 @@ h1, h2, h3, h4, h5,
   background: transparent;
   padding: 16px 20px; }
 
-.product-details button, .product-details .form-control {
-  height: 54px !important;
-  text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.1) !important;
-  color: #f1b8c4;
-  padding: 10px 20px;
-  background: transparent !important;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0;
-  font-size: 14px; }
+
 
 .product-details .form-group {
   position: relative; }
