@@ -8,8 +8,10 @@ import SwiperCore, {
     Pagination
 } from 'swiper/core';
 import Context from "../Context";
+import ScrollToTop from "./ScrollToTop";
 import PostcardTick from "./PostcardTick";
 SwiperCore.use([Pagination]);
+
 
 const CatalogueCard = (props) => {
     const [checked, setChecked] = useState(false);
@@ -17,6 +19,8 @@ const CatalogueCard = (props) => {
     const {setState} = useContext(Context);
 
     const handleItem = () => {
+        console.log(454545)
+        ScrollToTop();
         setState(prevState=>({...prevState, currentItem: catalogItems.find(el => el.id === elem.id), gift: checked}));
     }
 

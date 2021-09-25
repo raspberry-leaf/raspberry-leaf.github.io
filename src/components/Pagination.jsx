@@ -1,6 +1,7 @@
-import React, {useContext, useState} from "react";
+import React, {useContext} from "react";
 import Context from "../Context";
 import {makeStyles} from "@material-ui/core/styles";
+import ScrollToTop from "./ScrollToTop";
 
 const useStyles = makeStyles((theme) => ({
     list: {
@@ -23,6 +24,7 @@ const Pagination = (props) => {
             return el;
         });
 
+        ScrollToTop();
         setCatalogItems(data);
         setPagination(prevState=>({...prevState,
             current: page
