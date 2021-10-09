@@ -14,7 +14,7 @@ SwiperCore.use([Pagination]);
 const CatalogueDetailed = () => {
     const {state, rates} = useContext(Context);
     const [checked, setChecked] = useState(false);
-    console.log(state)
+
     return (
         <>
         <section className="ftco-section bg-light">

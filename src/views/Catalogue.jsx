@@ -5,7 +5,7 @@ import ScrollToTop from "../components/ScrollToTop";
 
 const Catalogue = () => {
 
-    useEffect(() => ScrollToTop(),[])
+    //useEffect(() => ScrollToTop(),[])
 
     return (
         <div className="contact">

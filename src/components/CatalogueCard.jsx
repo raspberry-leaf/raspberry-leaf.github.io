@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import present from "../img/img_present.jpg";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,16 +12,38 @@ import ScrollToTop from "./ScrollToTop";
 import PostcardTick from "./PostcardTick";
 SwiperCore.use([Pagination]);
 
-
 const CatalogueCard = (props) => {
     const [checked, setChecked] = useState(false);
-    const {elem,postCard, popular, catalogItems} = props;
-    const {setState} = useContext(Context);
+    const {elem, postCard, popular} = props;
+    const {state, setState} = useContext(Context);
+    const {catalogItems} = state;
+
+    const checkGift = () => {
+        if(checkElemInCart()){
+            const currentElem = state.cart.find(el => el.item.id === elem.id)
+            setChecked(currentElem.gift)
+        }
+    }
+    useEffect(checkGift,[])
 
     const handleItem = () => {
-        console.log(454545)
         ScrollToTop();
-        setState(prevState=>({...prevState, currentItem: catalogItems.find(el => el.id === elem.id), gift: checked}));
+        setState(prevState=>({...prevState, currentItem: catalogItems.find(el => el.id === elem.id)}));
+    }
+
+    const handleCart = () => {
+        let data = [...state.cart];
+
+        if (data.find(el => el.item.id === elem.id)) {
+            data = data.filter(el => el.item.id !== elem.id)
+        } else {
+            data.push({item: elem, gift: checked || (popular ? popular : false)})
+        }
+        setState(prevState=>({...prevState, cart: data}));
+    }
+
+    const checkElemInCart = () => {
+        return state.cart.find(el => el.item.id === elem.id) !== undefined;
     }
 
     return (
@@ -70,9 +92,19 @@ const CatalogueCard = (props) => {
                     }
 
                     <hr/>
-                    <p className="bottom-area d-flex">
-                        <a href="#" className="add-to-cart"><span>В корзину <i
-                            className="ion-ios-add ml-1"></i></span></a>
+                    <p className="bottom-area d-flex align-items-center">
+                        {checkElemInCart()
+                            ? <>
+                            <button className="add-to-cart added" onClick={handleCart}><span>Уже в корзинe <i
+                                className="ion-ios-add ml-1"></i></span></button>
+                                <Link className="nav-link nav-link_center" to="/cart" className="toCart">
+                                    Перейти в корзину
+                                </Link>
+                            </>
+                            :  <button className="add-to-cart" onClick={handleCart}><span>В корзину <i
+                                className="ion-ios-add ml-1"></i></span></button>
+                        }
+
                     </p>
                 </div>
             </div>

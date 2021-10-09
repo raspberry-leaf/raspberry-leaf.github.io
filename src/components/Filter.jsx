@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
@@ -64,23 +64,10 @@ const valuetext = (value) => {
     return `${value} руб`;
 }
 
-const Filter = (props) => {
-    const {data, rates, desc} = useContext(Context);
-    const {catalogItems, randomArray, setCatalogItems, setPagination, pagination} = props;
+const Filter = () => {
+    const {state, setState} = useContext(Context);
+    const {catalogItems, pagination} = state;
     const classes = useStyles();
-
-    const[valueChoice, setValueChoice] = useState('popular');
-
-    const ratesArr = () => {
-        const newArr = [];
-        catalogItems.map(el => newArr.push(el.rate));
-        return newArr;
-    }
-
-    const minRate = Math.min( ...ratesArr());
-    const maxRate = Math.max( ...ratesArr());
-
-    const[valueRate, setValueRate] = useState([minRate, maxRate]);
 
     const handlePagination = (newData) => {
         newData.map((el, i) => {
@@ -97,15 +84,15 @@ const Filter = (props) => {
         data = data.sort(function(a, b) {
             return (a.showRate === b.showRate)? 0 : a.showRate? -1 : 1;
         });
-        setCatalogItems(handlePagination(data));
+        setState(prevState=>({...prevState, catalogItems: handlePagination(data)}));
     }
 
     const handlePopular = (data) => {
-        let newData = randomArray(data);
+        let newData = [...state.catalogItems];
         newData = newData.sort(function(a, b) {
             return (a.showRate === b.showRate)? 0 : a.showRate? -1 : 1;
         });
-        setCatalogItems(handlePagination(newData))
+        setState(prevState=>({...prevState, catalogItems: handlePagination(newData)}));
     }
 
     const handleChangeChoice = (value) => {
@@ -117,8 +104,7 @@ const Filter = (props) => {
         } else {
             handlePopular(data)
         }
-        setPagination(prevState=>({...prevState, current: 0}));
-        setValueChoice(value)
+        setState(prevState=>({...prevState, filter: value, pagination: {...prevState.pagination, current: 0}}));
     };
 
     const handleChangeRate = (event, newValue) => {
@@ -138,15 +124,19 @@ const Filter = (props) => {
             return el;
         })
 
-        if (valueChoice === "popular") {
+        if (state.filter === "popular") {
             handlePopular(data)
         } else {
-            handleLowHighRate(data, valueChoice)
+            handleLowHighRate(data, state.filter)
         }
-        setValueRate(newValue);
-        setPagination(prevState=>({...prevState,
-            current: 0,
-            array: Array.from(Array(Math.ceil(data.filter(el => el.showRate).length/pagination.count)).keys())
+
+        setState(prevState=>({...prevState,
+            currentRangeRate: newValue,
+            pagination: {
+                ...prevState.pagination,
+                current: 0,
+                array: Array.from(Array(Math.ceil(data.filter(el => el.showRate).length/pagination.count)).keys())
+            }
         }));
     };
 
@@ -157,7 +147,7 @@ const Filter = (props) => {
                     Сортировать по:
                     <FormControl className={classes.formControl}>
                         <Select
-                            value={valueChoice}
+                            value={state.filter}
                             onChange={(e) => handleChangeChoice(e.target.value)}
                             displayEmpty
                             className={classes.selectEmpty}
@@ -173,14 +163,14 @@ const Filter = (props) => {
 
             <div className={classes.root}>
                 <Typography id="range-slider" gutterBottom>
-                    Цена от <span className={classes.bold}>{valueRate[0]}</span> до <span className={classes.bold}>{valueRate[1]}</span> руб
+                    Цена от <span className={classes.bold}>{state.currentRangeRate.length > 0 ? state.currentRangeRate[0] : state.rangeRate[0]}</span> до <span className={classes.bold}>{state.currentRangeRate.length > 0 ? state.currentRangeRate[1] : state.rangeRate[1]}</span> руб
                 </Typography>
                 <Slider
                     className={classes.customSlider}
-                    value={valueRate}
-                    min={minRate}
+                    value={state.currentRangeRate.length > 0 ? state.currentRangeRate : state.rangeRate}
+                    min={state.rangeRate[0]}
                     step={10}
-                    max={maxRate}
+                    max={state.rangeRate[1]}
                     onChange={handleChangeRate}
                     valueLabelDisplay="auto"
                     aria-labelledby="range-slider"

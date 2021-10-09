@@ -7890,12 +7890,16 @@ h1, h2, h3, h4, h5,
       margin-bottom: 10px; }
       .product .text .bottom-area a {
         color: #000000; }
-      .product .text .bottom-area a.add-to-cart {
+      .product .text .bottom-area .add-to-cart {
+        display: block;
         font-size: 13px;
         color: #000000;
+        border: none;
+        outline: none;
+        cursor: pointer;
         text-transform: uppercase;
         font-weight: 300; }
-        .product .text .bottom-area a.add-to-cart i {
+        .product .text .bottom-area .add-to-cart i {
           font-size: 16px; }
 
 .product-details h3 {
@@ -9201,4 +9205,22 @@ textarea.form-control {
   background-color: rgba(241, 184, 196, 0.5);
   padding: 10px 15px;
   border-radius: 4px;
+  border: 1px solid transparent;
+  transition: .1s ease-in-out;
 }
+
+.add-to-cart:hover {
+  background-color: rgba(241, 184, 196, 0.8);
+}
+
+.add-to-cart.added {
+  background-color: rgba(241, 184, 196, 0.2);
+  border: 1px solid rgba(241, 184, 196, 1);
+}
+
+.toCart {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+  margin-left: 10px;
+}
+

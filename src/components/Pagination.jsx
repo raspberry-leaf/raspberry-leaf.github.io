@@ -12,10 +12,10 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const Pagination = (props) => {
-    const {data, rates, desc} = useContext(Context);
+const Pagination = () => {
     const classes = useStyles();
-    const {catalogItems, pagination, setPagination, setCatalogItems} = props;
+    const {state, setState} = useContext(Context);
+    const {catalogItems, pagination} = state;
 
     const handleClick = (page) => {
         const data = [...catalogItems];
@@ -25,10 +25,7 @@ const Pagination = (props) => {
         });
 
         ScrollToTop();
-        setCatalogItems(data);
-        setPagination(prevState=>({...prevState,
-            current: page
-        }));
+        setState(prevState=>({...prevState, catalogItems: data, pagination: {...prevState.pagination, current: page}}));
     }
 
     return (
