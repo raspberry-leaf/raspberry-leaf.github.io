@@ -19,6 +19,7 @@ const CatalogueCard = (props) => {
     const {catalogItems} = state;
 
     const checkGift = () => {
+        console.log(checkElemInCart())
         if(checkElemInCart()){
             const currentElem = state.cart.find(el => el.item.id === elem.id)
             setChecked(currentElem.gift)

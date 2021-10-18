@@ -119,6 +119,12 @@ const CartForm = () => {
 
                 </form>
             </div>
+            <div className="col-md-4">
+                <h6>Промокод</h6>
+                <div className="form-group">
+                    <input type="text" required name="entry.1622111991" className="form-control" placeholder=""/>
+                </div>
+            </div>
         </div>
     );
 }

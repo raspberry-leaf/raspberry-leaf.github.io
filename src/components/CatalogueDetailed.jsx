@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import Context from "../Context";
 import present from "../img/img_present.jpg";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,11 +9,40 @@ import SwiperCore, {
 } from 'swiper/core';
 import PopularItems from "./PopularItems";
 import PostcardTick from "./PostcardTick";
+import {Link} from "react-router-dom";
 SwiperCore.use([Pagination]);
 
 const CatalogueDetailed = () => {
-    const {state, rates} = useContext(Context);
+    const {state, setState} = useContext(Context);
     const [checked, setChecked] = useState(false);
+    const [inCart, setInCart] = useState(false);
+
+    const checkGift = () => {
+        if(checkElemInCart()){
+            const currentElem = state.cart.find(el => el.item.id === state.currentItem.id)
+            setChecked(currentElem.gift)
+            setInCart(true);
+        }
+    }
+    useEffect(checkGift,[])
+
+    const handleCart = () => {
+        let data = [...state.cart];
+
+        if (data.find(el => el.item.id === state.currentItem.id)) {
+            data = data.filter(el => el.item.id !== state.currentItem.id)
+            setInCart(false);
+            setChecked(false);
+        } else {
+            data.push({item: state.currentItem, gift: checked})
+            setInCart(true);
+        }
+        setState(prevState=>({...prevState, cart: data}));
+    }
+
+    const checkElemInCart = () => {
+        return state.cart.find(el => el.item.id === state.currentItem.id) !== undefined;
+    }
 
     return (
         <>
@@ -56,9 +85,19 @@ const CatalogueDetailed = () => {
                                           setChecked={setChecked}/>
                         </div>
                         <div className="mt-2">
-                            <button className="btn btn-primary py-3 px-4 w-100 btn-local btn-left">
-                                В корзину
-                            </button>
+                            {inCart
+                                ? <>
+                                    <button className="btn btn-primary py-3 px-4 w-100 btn-local btn-left added" onClick={handleCart}>
+                                        <span>Уже в корзинe <i className="ion-ios-add ml-1"></i></span>
+                                    </button>
+                                    <Link className="nav-link nav-link_center" to="/cart" className="toCart">
+                                    Перейти в корзину
+                                    </Link>
+                                    </>
+                                :  <button onClick={handleCart} className="btn btn-primary py-3 px-4 w-100 btn-local btn-left">
+                                    В корзину
+                                </button>
+                            }
                         </div>
                     </div>
                 </div>

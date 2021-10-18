@@ -76,7 +76,7 @@ const Main = (props) => {
 
         data.map((items,j) => {
 
-            items.items.map((elem, i) => {
+            items.items.map((elem) => {
                 const currentImageArr = imagesArr.find(el => el.imgTitle === items.name).array;
                 const currentImage = currentImageArr.find(el => el.type === elem.type).noPostcard;
                 const currentImagePostcard = currentImageArr.find(el => el.type === elem.type).withPostcard;
@@ -100,6 +100,7 @@ const Main = (props) => {
                 })
                 return elem;
             })
+            return items;
         })
 
         return randomArray(newArr);
