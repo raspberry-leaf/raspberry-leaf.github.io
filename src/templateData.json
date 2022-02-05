@@ -1,0 +1,319 @@
+[
+  {
+      "name": "muslinTwo_yg",
+      "color": "солнечный и травяной",
+      "items": [
+        {
+          "id": "20210801-01",
+          "type": "muslinTwo"
+        },
+        {
+          "id": "20210801-02",
+          "type": "muslinTwoBibsTwo"
+        },
+        {
+          "id": "20210801-03",
+          "type": "muslinTwoBibsTwoEars"
+        },
+        {
+          "id": "20210801-04",
+          "type": "muslinTwoBunny"
+        },
+        {
+          "id": "20210801-05",
+          "type": "muslinTwoBunnyEars"
+        },
+        {
+          "id": "20210801-06",
+          "type": "muslinTwoBunnyEarsBib"
+        },
+        {
+          "id": "20210801-07",
+          "type": "muslinTwoEars"
+        },
+        {
+          "id": "20210801-08",
+          "type": "muslinTwoEarsBib"
+        }
+      ]
+    },
+  {
+    "name": "muslinTwo_rg",
+    "color": "пыльная роза и дымчатый",
+    "items": [
+      {
+        "id": "20210901-01",
+        "type": "muslinTwo"
+      },
+      {
+        "id": "20210901-02",
+        "type": "muslinTwoBibsTwo"
+      },
+      {
+        "id": "20210901-03",
+        "type": "muslinTwoBibsTwoEars"
+      },
+      {
+        "id": "20210901-04",
+        "type": "muslinTwoBunny"
+      },
+      {
+        "id": "20210901-05",
+        "type": "muslinTwoBunnyEars"
+      },
+      {
+        "id": "20210901-06",
+        "type": "muslinTwoBunnyEarsBib"
+      },
+      {
+        "id": "20210901-07",
+        "type": "muslinTwoEars"
+      },
+      {
+        "id": "20210901-08",
+        "type": "muslinTwoEarsBib"
+      }
+    ]
+  },
+  {
+    "name": "base_rose",
+    "color": "пыльная роза",
+    "items": [
+      {
+        "id": "20210827-01",
+        "type": "base"
+      },
+      {
+        "id": "20210827-02",
+        "type": "baseBunny"
+      },
+      {
+        "id": "20210827-03",
+        "type": "baseBunnyCrochet"
+      },
+      {
+        "id": "20210827-04",
+        "type": "baseBunnyCrochetRattle"
+      },
+      {
+        "id": "20210827-05",
+        "type": "baseBunnyRattle"
+      },
+      {
+        "id": "20210827-06",
+        "type": "baseCrochet"
+      },
+      {
+        "id": "20210827-07",
+        "type": "baseCrochetRattle"
+      },
+      {
+        "id": "20210827-08",
+        "type": "baseRattle"
+      }
+    ]
+  },
+  {
+    "name": "base_lemon",
+    "color": "лимонный",
+    "items": [
+      {
+        "id": "20210828-01",
+        "type": "base"
+      },
+      {
+        "id": "20210828-02",
+        "type": "baseBunny"
+      },
+      {
+        "id": "20210828-03",
+        "type": "baseBunnyCrochet"
+      },
+      {
+        "id": "20210828-04",
+        "type": "baseBunnyCrochetRattle"
+      },
+      {
+        "id": "20210828-05",
+        "type": "baseBunnyRattle"
+      },
+      {
+        "id": "20210828-06",
+        "type": "baseCrochet"
+      },
+      {
+        "id": "20210828-07",
+        "type": "baseCrochetRattle"
+      },
+      {
+        "id": "20210828-08",
+        "type": "baseRattle"
+      }
+    ]
+  },
+  {
+    "name": "base_green",
+    "color": "травяной",
+    "items": [
+      {
+        "id": "20210823-01",
+        "type": "base"
+      },
+      {
+        "id": "20210823-02",
+        "type": "baseBunny"
+      },
+      {
+        "id": "20210823-03",
+        "type": "baseBunnyCrochet"
+      },
+      {
+        "id": "20210823-04",
+        "type": "baseBunnyCrochetRattle"
+      },
+      {
+        "id": "20210823-05",
+        "type": "baseBunnyRattle"
+      },
+      {
+        "id": "20210823-06",
+        "type": "baseCrochet"
+      },
+      {
+        "id": "20210823-07",
+        "type": "baseCrochetRattle"
+      },
+      {
+        "id": "20210823-08",
+        "type": "baseRattle"
+      }
+    ]
+  },
+  {
+    "name": "base_grey",
+    "color": "дымчатый",
+    "items": [
+      {
+        "id": "20210723-01",
+        "type": "base"
+      },
+      {
+        "id": "20210723-02",
+        "type": "baseBunny"
+      },
+      {
+        "id": "20210723-03",
+        "type": "baseBunnyCrochet"
+      },
+      {
+        "id": "20210723-04",
+        "type": "baseBunnyCrochetRattle"
+      },
+      {
+        "id": "20210723-05",
+        "type": "baseBunnyRattle"
+      },
+      {
+        "id": "20210723-06",
+        "type": "baseCrochet"
+      },
+      {
+        "id": "20210723-07",
+        "type": "baseCrochetRattle"
+      },
+      {
+        "id": "20210723-08",
+        "type": "baseRattle"
+      }
+    ]
+  },
+  {
+    "name": "baseCotton_flowers",
+    "color": "цветочный",
+    "items": [
+      {
+        "id": "20210623-01",
+        "type": "baseCotton"
+      },
+      {
+        "id": "20210623-02",
+        "type": "baseCottonBunny"
+      },
+      {
+        "id": "20210623-03",
+        "type": "baseCottonEars"
+      },
+      {
+        "id": "20210623-04",
+        "type": "baseCottonBunnyEars"
+      }
+    ]
+  },
+  {
+    "name": "baseCotton_cotton",
+    "color": "цветущий хлопок",
+    "items": [
+      {
+        "id": "20210523-01",
+        "type": "baseCotton"
+      },
+      {
+        "id": "20210523-02",
+        "type": "baseCottonBunny"
+      },
+      {
+        "id": "20210523-03",
+        "type": "baseCottonEars"
+      },
+      {
+        "id": "20210523-04",
+        "type": "baseCottonBunnyEars"
+      }
+    ]
+  },
+  {
+    "name": "blanket_beige",
+    "color": "бежевый",
+    "items": [
+      {
+        "id": "20210831-01",
+        "type": "blanket"
+      },
+      {
+        "id": "20210831-02",
+        "type": "blanketBunny"
+      },
+      {
+        "id": "20210831-03",
+        "type": "blanketBase"
+      },
+      {
+        "id": "20210831-04",
+        "type": "blanketBaseBunny"
+      }
+    ]
+  },
+  {
+    "name": "blanket_grey",
+    "color": "дымчатый",
+    "items": [
+      {
+        "id": "20210831-05",
+        "type": "blanket"
+      },
+      {
+        "id": "20210831-06",
+        "type": "blanketBunny"
+      },
+      {
+        "id": "20210831-07",
+        "type": "blanketBase"
+      },
+      {
+        "id": "20210831-08",
+        "type": "blanketBaseBunny"
+      }
+    ]
+  }
+]
+

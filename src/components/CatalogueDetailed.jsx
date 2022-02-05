@@ -14,7 +14,7 @@ SwiperCore.use([Pagination]);
 
 const CatalogueDetailed = () => {
     const {state, setState} = useContext(Context);
-    const [checked, setChecked] = useState(false);
+    const [checked, setChecked] = useState(true);
     const [inCart, setInCart] = useState(false);
 
     const checkGift = () => {
@@ -76,9 +76,7 @@ const CatalogueDetailed = () => {
                         {state.currentItem.desc && <p dangerouslySetInnerHTML={{__html: `${state.currentItem.desc}`}}></p>}
                         {state.currentItem.itemsDesc && <p dangerouslySetInnerHTML={{__html: `${state.currentItem.itemsDesc}`}}></p>}
                         {state.currentItem.descPresent && <p dangerouslySetInnerHTML={{__html: `${state.currentItem.descPresent}`}}></p>}
-                        <p>Включена <strong>бесплатная доставка</strong> набора по всей России. <br/>
-                        Основная компания, которая осуществляет доставку в рамках предложения, - Почта России. <br/>
-                        Если вам хотелось бы получить набор другой почтовой компанией, то об этом необходимо сообщить заранее. В таком случае возможна небольшая доплата в зависимости от выбранной компании и услуги.</p>
+                        {state.currentItem.descPost && <p dangerouslySetInnerHTML={{__html: `${state.currentItem.descPost}`}}></p>}
                         <div className="mt-2">
                             <PostcardTick elem={state.currentItem}
                                           checked={checked}

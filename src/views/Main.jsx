@@ -88,15 +88,23 @@ const Main = (props) => {
                     type: elem.type,
                     name: currentName,
                     shortName: `Набор ${items.color}`,
-                    shortDesc: rates.rates.find(el => el.type === elem.type).name,
+                    shortDesc: currentRate.name || '',
                     descPresent: currentRate.descBig ? rates.postcard.descBig : rates.postcard.descSmall,
-                    desc: currentRate.desc,
-                    itemsDesc: currentRate.itemsDesc,
+                    desc: currentRate.desc
+                        + `${currentRate.bunny ? rates.generatedDescription.bunny : ''}`
+                        + `${currentRate.rattle ? rates.generatedDescription.rattle : ''}`
+                        + `${currentRate.crochet ? rates.generatedDescription.crochet : ''}`
+                    ,
+                    itemsDesc: currentRate.itemsDesc + currentRate.itemsDescMaterial,
                     rate: currentRate.rate,
                     noPostcard: currentImage,
                     withPostcard: currentImagePostcard,
                     show: j === 0,
-                    showRate: true
+                    showRate: true,
+
+                    descPost: currentRate.post
+                        ? rates.generatedDescription.post
+                        : ''
                 })
                 return elem;
             })
