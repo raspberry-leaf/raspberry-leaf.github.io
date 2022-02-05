@@ -9221,19 +9221,17 @@ textarea.form-control {
 .toCart {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   line-height: 1.2;
-  margin-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  opacity: 0.7;
 }
 
 .cartImg {
-  width: 30%;
+  max-width: 80%;
 }
 
-.cartPrice {
-  width: 10%;
-}
-
-.cartDelete {
-  width: 10%;
+.cartTable_body .product-name {
+  text-align: left;
 }
 
 .ftco-cart button.deleteBtn {
@@ -9242,7 +9240,6 @@ textarea.form-control {
   border-radius: 4px;
   line-height: 1;
   font-weight: 500;
-  width: 25px;
   height: 25px !important;
   display: flex;
   flex-direction: column;
@@ -9253,3 +9250,105 @@ textarea.form-control {
   cursor: pointer;
 }
 
+.cartTable_header {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 35% 35% 20% 10%;
+  margin-bottom: 10px;
+}
+
+.cartTable_header  div {
+ text-align: center;
+}
+
+.cartTable_bodyRow {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 35% 35% 20% 10%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 425px) {
+  .cartTable_bodyRow {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+  }
+  
+  .cartPrice {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  .cartTable_header {
+    display: none;
+  }
+
+  .cartTable_bodyRow .product-name {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .cartTable_footer {
+    display: flex !important;
+    text-align: left;
+  }
+
+  .cartTable_rate {
+    flex-shrink: 0;
+    padding: 10px;
+  }
+
+  .cartTable_ratePromo {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+}
+
+.cartTable_footer {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 35% 35% 20% 10%;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.cardForm input{
+  text-align: left !important;
+}
+
+.table.cartTable {
+  min-width: 0!important;
+}
+
+.cartTable_ratePromo input {
+  padding-right: 0 !important;
+}
+
+.cardModal {
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.5);
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  height: 100%;
+}
+
+.cardModal_wrapper {
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 4px;
+  border: 1px solid grey;
+}
+
+.cardModal_desc {
+  color: black;
+  text-align: center;
+  margin-bottom: 25px;
+}

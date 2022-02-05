@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { Link, withRouter } from "react-router-dom";
 import main from "../img/img_main.png";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
@@ -7,7 +7,6 @@ import Context from "../Context";
 const Navigation = (props) => {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     const {state} = useContext(Context);
-
     return (
         <div className="navigation">
             <nav
@@ -28,7 +27,7 @@ const Navigation = (props) => {
                                     props.location.pathname === "/" ? "active" : ""
                                 }`}
                             >
-                                <Link className="nav-link" to="/">
+                                <Link className="nav-link" to="/" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                                     Главная
                                 </Link>
                             </li>
@@ -37,7 +36,7 @@ const Navigation = (props) => {
                                     props.location.pathname === "/catalog" ? "active" : ""
                                 }`}
                             >
-                                <Link className="nav-link" to="/catalog">
+                                <Link className="nav-link" to="/catalog" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                                     Каталог
                                 </Link>
                             </li>
@@ -46,7 +45,7 @@ const Navigation = (props) => {
                                     props.location.pathname === "/about" ? "active" : ""
                                 }`}
                             >
-                                <Link className="nav-link" to="/about">
+                                <Link className="nav-link" to="/about" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                                     О нас
                                 </Link>
                             </li>
@@ -55,7 +54,7 @@ const Navigation = (props) => {
                                     props.location.pathname === "/delivery" ? "active" : ""
                                 }`}
                             >
-                                <Link className="nav-link" to="/delivery">
+                                <Link className="nav-link" to="/delivery" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                                     Доставка
                                 </Link>
                             </li>
@@ -64,7 +63,7 @@ const Navigation = (props) => {
                                     props.location.pathname === "/contact" ? "active" : ""
                                 }`}
                             >
-                                <Link className="nav-link" to="/contact">
+                                <Link className="nav-link" to="/contact" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                                     Контакты
                                 </Link>
                             </li>
@@ -73,7 +72,7 @@ const Navigation = (props) => {
                                     props.location.pathname === "/cart" ? "active" : ""
                                 }`}
                             >
-                                <Link className="nav-link nav-link_center" to="/cart">
+                                <Link className="nav-link nav-link_center" to="/cart" onClick={() => setShowMobileMenu(!showMobileMenu)}>
                                     <ShoppingCartIcon/> [{state.cart.length}]
                                 </Link>
                             </li>

@@ -56,8 +56,15 @@ const useStyles = makeStyles((theme) => ({
     },
 
     customSlider: {
-        color: "#ffa0af"
+        color: "#ffa0af",
+
+        ['@media(max-width: 576px)']: {
+           margin: "0 10px",
+           width: "90%"
+        }
     }
+
+
 }));
 
 const valuetext = (value) => {

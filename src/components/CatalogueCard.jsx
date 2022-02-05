@@ -19,7 +19,6 @@ const CatalogueCard = (props) => {
     const {catalogItems} = state;
 
     const checkGift = () => {
-        console.log(checkElemInCart())
         if(checkElemInCart()){
             const currentElem = state.cart.find(el => el.item.id === elem.id)
             setChecked(currentElem.gift)
@@ -93,7 +92,7 @@ const CatalogueCard = (props) => {
                     }
 
                     <hr/>
-                    <p className="bottom-area d-flex align-items-center">
+                    <p className={checkElemInCart() ? "bottom-area" : "bottom-area d-flex align-items-center" }>
                         {checkElemInCart()
                             ? <>
                             <button className="add-to-cart added" onClick={handleCart}><span>Уже в корзинe <i
