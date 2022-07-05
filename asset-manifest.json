@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.8fd5ca89.chunk.css",
-    "main.js": "/static/js/main.430bfa66.chunk.js",
-    "main.js.map": "/static/js/main.430bfa66.chunk.js.map",
+    "main.css": "/static/css/main.d82e7d25.chunk.css",
+    "main.js": "/static/js/main.96b2725e.chunk.js",
+    "main.js.map": "/static/js/main.96b2725e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4d25ba2e.js",
     "runtime-main.js.map": "/static/js/runtime-main.4d25ba2e.js.map",
     "static/css/2.0224afb0.chunk.css": "/static/css/2.0224afb0.chunk.css",
@@ -10,11 +10,11 @@
     "static/js/2.d6fe9abd.chunk.js.map": "/static/js/2.d6fe9abd.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.0224afb0.chunk.css.map": "/static/css/2.0224afb0.chunk.css.map",
-    "static/css/main.8fd5ca89.chunk.css.map": "/static/css/main.8fd5ca89.chunk.css.map",
+    "static/css/main.d82e7d25.chunk.css.map": "/static/css/main.d82e7d25.chunk.css.map",
     "static/js/2.d6fe9abd.chunk.js.LICENSE.txt": "/static/js/2.d6fe9abd.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/bg_main.44d85385.jpg",
     "static/media/favicon.ico": "/static/media/favicon.b4939079.ico",
-    "static/media/ico_instagram.e930bb76.png": "/static/media/ico_instagram.e930bb76.png",
+    "static/media/ico_vk.85da9ca9.png": "/static/media/ico_vk.85da9ca9.png",
     "static/media/img_baseBunnyCrochetRattle_green.63a63c5a.jpg": "/static/media/img_baseBunnyCrochetRattle_green.63a63c5a.jpg",
     "static/media/img_baseBunnyCrochetRattle_green_p.e707ab05.jpg": "/static/media/img_baseBunnyCrochetRattle_green_p.e707ab05.jpg",
     "static/media/img_baseBunnyCrochetRattle_grey.b5b07c4a.jpg": "/static/media/img_baseBunnyCrochetRattle_grey.b5b07c4a.jpg",
@@ -144,13 +144,14 @@
     "static/media/img_muslinTwo_rg_p.3fcb46c9.jpg": "/static/media/img_muslinTwo_rg_p.3fcb46c9.jpg",
     "static/media/img_muslinTwo_yg.14a379d1.jpg": "/static/media/img_muslinTwo_yg.14a379d1.jpg",
     "static/media/img_muslinTwo_yg_p.264ac1f2.jpg": "/static/media/img_muslinTwo_yg_p.264ac1f2.jpg",
-    "static/media/img_present.cf2f3569.jpg": "/static/media/img_present.cf2f3569.jpg"
+    "static/media/img_present.cf2f3569.jpg": "/static/media/img_present.cf2f3569.jpg",
+    "static/media/img_video.ebb14f06.png": "/static/media/img_video.ebb14f06.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4d25ba2e.js",
     "static/css/2.0224afb0.chunk.css",
     "static/js/2.d6fe9abd.chunk.js",
-    "static/css/main.8fd5ca89.chunk.css",
-    "static/js/main.430bfa66.chunk.js"
+    "static/css/main.d82e7d25.chunk.css",
+    "static/js/main.96b2725e.chunk.js"
   ]
 }
