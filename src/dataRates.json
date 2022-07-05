@@ -1,6 +1,6 @@
 {
   "postcard": {
-    "rate": 160,
+    "rate": 100,
     "name": "в подарок (открытка и подарочная упаковка)",
     "descBig": "При выборе опции <strong>«в подарок»</strong> набор будет аккуратно упакован в плотную крафт-коробку с атласной лентой. </br>К набору также будет добавлена открытка с цветочным дизайном, который подчеркнёт индивидуальность подарка. Обратная сторона открытки светлая, для тёплых сердечных пожеланий.",
     "descSmall": "При выборе опции <strong>«в подарок»</strong> набор будет аккуратно упакован в мешочек ручной работы с атласной лентой. </br>К набору также будет добавлена открытка с цветочным дизайном, который подчеркнёт индивидуальность подарка. Обратная сторона открытки светлая, для тёплых сердечных пожеланий."
@@ -20,7 +20,7 @@
      "itemsDescMaterial": "</br>* материал: муслин (100% хлопок), бук",
      "post": true,
      "descBig": true,
-     "rate": 1950
+     "rate": 2500
    },
    {
      "type": "baseBunny",
@@ -31,7 +31,7 @@
      "bunny": true,
      "post": true,
      "descBig": true,
-     "rate": 4220
+     "rate": 4600
    },
     {
       "type": "baseCrochet",
@@ -42,7 +42,7 @@
       "crochet": true,
       "post": true,
       "descBig": true,
-      "rate": 2420
+      "rate": 3000
     },
     {
       "type": "baseRattle",
@@ -53,7 +53,7 @@
       "rattle": true,
       "post": true,
       "descBig": true,
-      "rate": 2750
+      "rate": 3580
     },
     {
       "type": "baseCrochetRattle",
@@ -65,7 +65,7 @@
       "crochet": true,
       "post": true,
       "descBig": true,
-      "rate": 3200
+      "rate": 4100
     },
     {
       "type": "baseBunnyCrochet",
@@ -77,7 +77,7 @@
       "crochet": true,
       "post": true,
       "descBig": true,
-      "rate": 4700
+      "rate": 5180
     },
     {
       "type": "baseBunnyRattle",
@@ -89,7 +89,7 @@
       "rattle": true,
       "post": true,
       "descBig": true,
-      "rate": 4990
+      "rate": 5740
     },
     {
       "type": "baseBunnyCrochetRattle",
@@ -102,7 +102,7 @@
       "crochet": true,
       "post": true,
       "descBig": true,
-      "rate": 5480
+      "rate": 6270
     },
     {
       "type": "muslinTwo",
@@ -112,7 +112,7 @@
       "itemsDescMaterial": "</br>* материалы: муслин (100% хлопок)",
       "post": true,
       "descBig": true,
-      "rate": 1890
+      "rate": 2110
     },
     {
       "type": "muslinTwoEars",
@@ -122,7 +122,7 @@
       "itemsDescMaterial": "</br>* материалы: муслин (100% хлопок), бук",
       "post": true,
       "descBig": true,
-      "rate": 2395
+      "rate": 3670
     },
     {
       "type": "muslinTwoEarsBib",
@@ -132,7 +132,7 @@
       "itemsDescMaterial": "</br>* материалы: муслин (100% хлопок), бук",
       "post": true,
       "descBig": true,
-      "rate": 2910
+      "rate": 3200
     },
     {
       "type": "muslinTwoBibsTwo",
@@ -142,7 +142,7 @@
       "itemsDescMaterial": "</br>* материалы: муслин (100% хлопок)",
       "post": true,
       "descBig": true,
-      "rate": 2910
+      "rate": 3180
     },
     {
       "type": "muslinTwoBibsTwoEars",
@@ -152,7 +152,7 @@
       "itemsDescMaterial": "</br>* материалы: муслин (100% хлопок), бук",
       "post": true,
       "descBig": true,
-      "rate": 3415
+      "rate": 3730
     },
     {
       "type": "muslinTwoBunny",
@@ -163,7 +163,7 @@
       "bunny": true,
       "post": true,
       "descBig": true,
-      "rate": 4165
+      "rate": 4270
     },
     {
       "type": "muslinTwoBunnyEars",
@@ -174,7 +174,7 @@
       "bunny": true,
       "post": true,
       "descBig": true,
-      "rate": 4675
+      "rate": 4830
     },
     {
       "type": "muslinTwoBunnyEarsBib",
@@ -185,7 +185,7 @@
       "bunny": true,
       "post": true,
       "descBig": true,
-      "rate": 5185
+      "rate": 5360
     },
     {
       "type": "baseCotton",
@@ -195,7 +195,7 @@
       "itemsDescMaterial": "</br>* материалы: кулирка (96% хлопок, 4% лайкра)",
       "post": true,
       "descBig": true,
-      "rate": 2110
+      "rate": 3400
     },
     {
       "type": "baseCottonBunny",
@@ -206,7 +206,7 @@
       "bunny": true,
       "post": true,
       "descBig": true,
-      "rate": 4385
+      "rate": 5550
     },
     {
       "type": "baseCottonEars",
@@ -216,7 +216,7 @@
       "itemsDescMaterial": "</br>* материалы: кулирка (96% хлопок, 4% лайкра), бук",
       "post": true,
       "descBig": true,
-      "rate": 2615
+      "rate": 3950
     },
     {
       "type": "baseCottonBunnyEars",
@@ -227,7 +227,7 @@
       "bunny": true,
       "post": true,
       "descBig": true,
-      "rate": 4895
+      "rate": 6110
     },
     {
       "type": "blanket",
@@ -237,7 +237,7 @@
       "itemsDescMaterial": "</br>* материалы: муслин (100% хлопок)",
       "post": true,
       "descBig": true,
-      "rate": 2110
+      "rate": 2630
     },
     {
       "type": "blanketBunny",
@@ -248,7 +248,7 @@
       "bunny": true,
       "post": true,
       "descBig": true,
-      "rate": 4385
+      "rate": 4780
     },
     {
       "type": "blanketBase",
@@ -258,7 +258,7 @@
       "itemsDescMaterial": "</br>* материал: муслин (100% хлопок), бук",
       "post": true,
       "descBig": true,
-      "rate": 3125
+      "rate": 3720
     },
     {
       "type": "blanketBaseBunny",
@@ -269,7 +269,7 @@
       "bunny": true,
       "post": true,
       "descBig": true,
-      "rate": 5400
+      "rate": 5870
     }
   ]
 }

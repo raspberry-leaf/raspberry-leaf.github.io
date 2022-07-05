@@ -13,7 +13,7 @@ const Contact = () => {
                         <div className="col-md py-5 wrap-about pb-md-5 ">
                             <div>
                                 <p style={{textAlign: "center"}}>
-                                    Если появились вопросы, то с нами всегда можно связаться в <a href="https://www.instagram.com/raspberry__leaf/" target="_blank"  rel="noreferrer">Instagram</a> или оформив заказ на сайте.
+                                    Если появились вопросы, то с нами всегда можно связаться во <a href="https://vk.com/raspberry__leaf" target="_blank"  rel="noreferrer">ВКонтакте</a> или оформив заказ на сайте.
                                 </p>
                             </div>
                         </div>

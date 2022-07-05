@@ -72,13 +72,13 @@ const CartForm = (props) => {
                                                required
                                                onClick={() => setContact("WhatsApp")}
                                                name="entry.731680607"/> WhatsApp</label>
-                                    <label htmlFor="Instagram" className="mr-3">
+                                    <label htmlFor="VK" className="mr-3">
                                         <input type="radio"
-                                               id="Instagram"
+                                               id="VK"
                                                required
-                                               value={"Instagram"}
-                                               onClick={() => setContact("Instagram")}
-                                               name="entry.731680607"/> Instagram</label>
+                                               value={"ВКонтакте"}
+                                               onClick={() => setContact("VK")}
+                                               name="entry.731680607"/> ВКонтакте</label>
                                     <label htmlFor="Telegram" className="mr-3">
                                         <input type="radio"
                                                id="Telegram"

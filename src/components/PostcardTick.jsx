@@ -24,11 +24,12 @@ const PostcardTick = (props) => {
                 control={<CustomCheckbox checked={checked} onChange={() => setChecked(!checked)} name="checkbox" />}
                 label={rates.postcard.name}
             />
-            <div className="d-flex">
+            <div className="d-flex position-relative">
                 <div className="pricing">
                     <p className="price"><span className="price-sale">
                     {checked ? `${elem.rate + rates.postcard.rate}` : elem.rate} руб</span></p>
                 </div>
+                <div className="freeDelivery">Бесплатная доставка</div>
             </div>
         </>
 

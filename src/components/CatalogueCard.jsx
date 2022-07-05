@@ -80,11 +80,12 @@ const CatalogueCard = (props) => {
                 <div className="text py-3 px-3">
                     <h3 className="catalogName"><a href="#">{elem.name}</a></h3>
                     {popular
-                        ?  <div className="d-flex">
+                        ?  <div className="d-flex position-relative">
                             <div className="pricing">
                                 <p className="price"><span className="price-sale">
                                     {elem.rate + postCard.rate} руб</span></p>
                             </div>
+                            <div className="freeDelivery">Бесплатная доставка</div>
                          </div>
                         : <PostcardTick elem={elem}
                                         checked={checked}

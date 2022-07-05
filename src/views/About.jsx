@@ -1,6 +1,8 @@
 import React from "react";
 import PageTop from "../components/PageTop";
 import PopularItems from "../components/PopularItems";
+import img_video from "../img/img_video.png";
+import ico_play from "../img/ico_play.png";
 
 function About() {
     return (
@@ -10,11 +12,13 @@ function About() {
             <section className="ftco-section ftco-no-pb ftco-no-pt bg-light">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center">
-                            <a href="https://vimeo.com/45830194"
+                        <div className="videoWrapper col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center">
+                            <img src={img_video}/>
+                            <a href="https://vk.com/video-107703359_456239068"
                                className="icon popup-vimeo d-flex justify-content-center align-items-center">
-                                <span className="icon-play"></span>
+                                <span className="icon-play"><img src={ico_play}/></span>
                             </a>
+
                         </div>
                         <div className="col-md-7 py-5 wrap-about pb-md-5 ">
                             <div className="heading-section-bold mb-5 mt-md-5">
@@ -28,7 +32,7 @@ function About() {
                                 <p>Вязаные грызунки и погремушки Raspberry Leaf - это моих рук дело. Вязать люблю с детства. Меня этому научила моя бабушка, а я этот навык довела до совершенства. </p>
                                 <p>Наши наборы радуют не только малышей, но и их родителей. Мы создаём комплекты высокого качества со всем необходимым в первые месяцы жизни новорождённого. Наборы не только эстетически красивы, но и экологичны и практичны в использовании. </p>
                                 <p>С Raspberry Leaf вы можете забыть о дополнительных расходах на доставку. Доставка по России всегда БЕСПЛАТНАЯ.</p>
-                                <p>Если появились вопросы, то со мной всегда можно связаться в нашем Instagram или оформив заказ на сайте.</p>
+                                <p>Если появились вопросы, то со мной всегда можно связаться в  или оформив заказ на сайте.</p>
                             </div>
                         </div>
                     </div>
