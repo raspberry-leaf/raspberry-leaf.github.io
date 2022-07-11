@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useContext, useState} from "react";
 import { Link, withRouter } from "react-router-dom";
 import main from "../img/img_main.png";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
@@ -6,7 +6,13 @@ import Context from "../Context";
 
 const Navigation = (props) => {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
-    const {state} = useContext(Context);
+    const {state, setState} = useContext(Context);
+
+    const handleLink = () => {
+        setState({...state, pagination: {...state.pagination, current: 0}});
+        setShowMobileMenu(!showMobileMenu)
+    }
+
     return (
         <div className="navigation">
             <nav
@@ -17,7 +23,7 @@ const Navigation = (props) => {
                         <img className="navbar-img" src={main}/>
                     </Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-                            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" onClick={() => handleLink()}>
                         <span className="oi oi-menu"></span> Меню
                     </button>
                     <div className={`collapse navbar-collapse ${showMobileMenu ? "show" : ''}`} id="ftco-nav" >
@@ -27,7 +33,7 @@ const Navigation = (props) => {
                                     props.location.pathname === "/" ? "active" : ""
                                 }`}
                             >
-                                <Link className="nav-link" to="/" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                                <Link className="nav-link" to="/" onClick={() => handleLink()}>
                                     Главная
                                 </Link>
                             </li>
@@ -36,7 +42,7 @@ const Navigation = (props) => {
                                     props.location.pathname === "/catalog" ? "active" : ""
                                 }`}
                             >
-                                <Link className="nav-link" to="/catalog" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                                <Link className="nav-link" to="/catalog" onClick={() => handleLink()}>
                                     Каталог
                                 </Link>
                             </li>
@@ -45,7 +51,7 @@ const Navigation = (props) => {
                                     props.location.pathname === "/about" ? "active" : ""
                                 }`}
                             >
-                                <Link className="nav-link" to="/about" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                                <Link className="nav-link" to="/about" onClick={() => handleLink()}>
                                     О нас
                                 </Link>
                             </li>
@@ -54,7 +60,7 @@ const Navigation = (props) => {
                                     props.location.pathname === "/delivery" ? "active" : ""
                                 }`}
                             >
-                                <Link className="nav-link" to="/delivery" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                                <Link className="nav-link" to="/delivery" onClick={() => handleLink()}>
                                     Доставка
                                 </Link>
                             </li>
@@ -63,7 +69,7 @@ const Navigation = (props) => {
                                     props.location.pathname === "/contact" ? "active" : ""
                                 }`}
                             >
-                                <Link className="nav-link" to="/contact" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                                <Link className="nav-link" to="/contact" onClick={() => handleLink()}>
                                     Контакты
                                 </Link>
                             </li>
@@ -72,7 +78,7 @@ const Navigation = (props) => {
                                     props.location.pathname === "/cart" ? "active" : ""
                                 }`}
                             >
-                                <Link className="nav-link nav-link_center" to="/cart" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                                <Link className="nav-link nav-link_center" to="/cart" onClick={() => handleLink()}>
                                     <ShoppingCartIcon/> [{state.cart.length}]
                                 </Link>
                             </li>

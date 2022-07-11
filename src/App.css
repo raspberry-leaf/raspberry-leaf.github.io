@@ -9365,6 +9365,12 @@ textarea.form-control {
   line-height: 1;
 }
 
+@media (max-width: 425px) {
+  .freeDelivery {
+    position: relative;
+  }
+}
+
 .videoWrapper {
   position: relative;
   width: 100%;

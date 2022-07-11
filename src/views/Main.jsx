@@ -9,7 +9,7 @@ import CatalogueDetail from "./CatalogueDetail";
 import Delivery from "./Delivery";
 import Cart from "./Cart";
 import Context from "../Context";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import muslinTwo_yg from "../img/catalog/muslinTwo_yg";
 import muslinTwo_rg from "../img/catalog/muslinTwo_rg";
 import base_rose from "../img/catalog/base_rose";
@@ -20,6 +20,7 @@ import baseCotton_flowers from "../img/catalog/baseCotton_flowers";
 import baseCotton_cotton from "../img/catalog/baseCotton_cotton";
 import blanket_beige from "../img/catalog/blanket_beige";
 import blanket_grey from "../img/catalog/blanket_grey";
+import { useHistory } from 'react-router-dom'
 
 const Main = (props) => {
     const {data, rates, desc} = props;
@@ -80,14 +81,14 @@ const Main = (props) => {
                 const currentImageArr = imagesArr.find(el => el.imgTitle === items.name).array;
                 const currentImage = currentImageArr.find(el => el.type === elem.type).noPostcard;
                 const currentImagePostcard = currentImageArr.find(el => el.type === elem.type).withPostcard;
-                const currentName = (`Набор ${items.color}: `).concat(rates.rates.find(el => el.type === elem.type).name);
+                const currentName = `Набор ${items.color} №${elem.number}: ${rates.rates.find(el => el.type === elem.type).name} `;
                 const currentRate = rates.rates.find(el => el.type === elem.type);
 
                 newArr.push({
                     id: elem.id,
                     type: elem.type,
                     name: currentName,
-                    shortName: `Набор ${items.color}`,
+                    shortName: `Набор ${items.color} №${elem.number} `,
                     shortDesc: currentRate.name || '',
                     descPresent: currentRate.descBig ? rates.postcard.descBig : rates.postcard.descSmall,
                     desc: currentRate.desc
@@ -135,6 +136,8 @@ const Main = (props) => {
         currentItem: '',
         cart: []
     })
+
+
 
     return (
         <div className="App">

@@ -1,11 +1,28 @@
-import React, {useEffect} from "react";
+import React, {useContext, useEffect, useRef} from "react";
 import PageTop from "../components/PageTop";
 import CatalogueBlock from "../components/CatalogueBlock";
 import ScrollToTop from "../components/ScrollToTop";
+import Context from "../Context";
 
 const Catalogue = () => {
+    const {state} = useContext(Context);
+    const {pagination} = state;
+    const {current} = pagination;
 
-    //useEffect(() => ScrollToTop(),[])
+    function usePrevious(value) {
+        const ref = useRef();
+        useEffect(() => {
+            ref.current = value;
+        });
+        return ref.current;
+    }
+    const prevAmount = usePrevious(current);
+
+    useEffect(() => {
+        if(prevAmount && prevAmount.current !== current) {
+            ScrollToTop()
+        }
+    }, [current])
 
     return (
         <div className="contact">

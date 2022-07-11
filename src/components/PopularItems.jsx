@@ -9,10 +9,11 @@ import SwiperCore, {
     Pagination
 } from 'swiper/core';
 import {Link} from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 SwiperCore.use([Pagination]);
 
 const PopularItems = () => {
-    const {state, rates} = useContext(Context);
+    const {state, rates, setState} = useContext(Context);
     const {catalogItems} = state;
 
     return (
@@ -25,6 +26,7 @@ const PopularItems = () => {
                     navigation
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
+                    loop
                     breakpoints={{
                         320: {
                         slidesPerView: 1,
@@ -56,7 +58,11 @@ const PopularItems = () => {
             </div>
         </div>
         <div className="col-md-6 m-auto">
-            <Link className="btn btn-primary py-3 px-4 w-100 btn-local" to="/catalog">
+            <Link className="btn btn-primary py-3 px-4 w-100 btn-local" to="/catalog" onClick={() =>
+            {
+                setState({...state, pagination: {...state.pagination, current: 0}});
+                ScrollToTop()
+            }}>
                 Посмотреть ещё
             </Link>
         </div>

@@ -47,7 +47,7 @@ const CatalogueCard = (props) => {
     }
 
     return (
-        <div key={elem.id} className={popular ? "col-lg" : "col-sm col-md-6 col-lg-3"}>
+        <div key={elem.id} className={popular ? "col-lg" : "col-sm col-md-6 col-lg-4 col-xl-3"}>
             <div className="product">
                 <Link className="img-prod"
                       onClick={handleItem}

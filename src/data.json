@@ -5,35 +5,43 @@
       "items": [
         {
           "id": "20210801-01",
-          "type": "muslinTwo"
+          "type": "muslinTwo",
+          "number": 1
         },
         {
           "id": "20210801-02",
-          "type": "muslinTwoBibsTwo"
+          "type": "muslinTwoBibsTwo",
+          "number": 2
         },
         {
           "id": "20210801-03",
-          "type": "muslinTwoBibsTwoEars"
+          "type": "muslinTwoBibsTwoEars",
+          "number": 3
         },
         {
           "id": "20210801-04",
-          "type": "muslinTwoBunny"
+          "type": "muslinTwoBunny",
+          "number": 4
         },
         {
           "id": "20210801-05",
-          "type": "muslinTwoBunnyEars"
+          "type": "muslinTwoBunnyEars",
+          "number": 5
         },
         {
           "id": "20210801-06",
-          "type": "muslinTwoBunnyEarsBib"
+          "type": "muslinTwoBunnyEarsBib",
+          "number": 6
         },
         {
           "id": "20210801-07",
-          "type": "muslinTwoEars"
+          "type": "muslinTwoEars",
+          "number": 7
         },
         {
           "id": "20210801-08",
-          "type": "muslinTwoEarsBib"
+          "type": "muslinTwoEarsBib",
+          "number": 8
         }
       ]
     },
@@ -43,35 +51,43 @@
     "items": [
       {
         "id": "20210901-01",
-        "type": "muslinTwo"
+        "type": "muslinTwo",
+        "number": 9
       },
       {
         "id": "20210901-02",
-        "type": "muslinTwoBibsTwo"
+        "type": "muslinTwoBibsTwo",
+        "number": 10
       },
       {
         "id": "20210901-03",
-        "type": "muslinTwoBibsTwoEars"
+        "type": "muslinTwoBibsTwoEars",
+        "number": 11
       },
       {
         "id": "20210901-04",
-        "type": "muslinTwoBunny"
+        "type": "muslinTwoBunny",
+        "number": 12
       },
       {
         "id": "20210901-05",
-        "type": "muslinTwoBunnyEars"
+        "type": "muslinTwoBunnyEars",
+        "number": 13
       },
       {
         "id": "20210901-06",
-        "type": "muslinTwoBunnyEarsBib"
+        "type": "muslinTwoBunnyEarsBib",
+        "number": 14
       },
       {
         "id": "20210901-07",
-        "type": "muslinTwoEars"
+        "type": "muslinTwoEars",
+        "number": 15
       },
       {
         "id": "20210901-08",
-        "type": "muslinTwoEarsBib"
+        "type": "muslinTwoEarsBib",
+        "number": 16
       }
     ]
   },
@@ -81,35 +97,43 @@
     "items": [
       {
         "id": "20210827-01",
-        "type": "base"
+        "type": "base",
+        "number": 17
       },
       {
         "id": "20210827-02",
-        "type": "baseBunny"
+        "type": "baseBunny",
+        "number": 18
       },
       {
         "id": "20210827-03",
-        "type": "baseBunnyCrochet"
+        "type": "baseBunnyCrochet",
+        "number": 19
       },
       {
         "id": "20210827-04",
-        "type": "baseBunnyCrochetRattle"
+        "type": "baseBunnyCrochetRattle",
+        "number": 20
       },
       {
         "id": "20210827-05",
-        "type": "baseBunnyRattle"
+        "type": "baseBunnyRattle",
+        "number": 21
       },
       {
         "id": "20210827-06",
-        "type": "baseCrochet"
+        "type": "baseCrochet",
+        "number": 22
       },
       {
         "id": "20210827-07",
-        "type": "baseCrochetRattle"
+        "type": "baseCrochetRattle",
+        "number": 23
       },
       {
         "id": "20210827-08",
-        "type": "baseRattle"
+        "type": "baseRattle",
+        "number": 24
       }
     ]
   },
@@ -119,35 +143,43 @@
     "items": [
       {
         "id": "20210828-01",
-        "type": "base"
+        "type": "base",
+        "number": 25
       },
       {
         "id": "20210828-02",
-        "type": "baseBunny"
+        "type": "baseBunny",
+        "number": 26
       },
       {
         "id": "20210828-03",
-        "type": "baseBunnyCrochet"
+        "type": "baseBunnyCrochet",
+        "number": 27
       },
       {
         "id": "20210828-04",
-        "type": "baseBunnyCrochetRattle"
+        "type": "baseBunnyCrochetRattle",
+        "number": 28
       },
       {
         "id": "20210828-05",
-        "type": "baseBunnyRattle"
+        "type": "baseBunnyRattle",
+        "number": 29
       },
       {
         "id": "20210828-06",
-        "type": "baseCrochet"
+        "type": "baseCrochet",
+        "number": 30
       },
       {
         "id": "20210828-07",
-        "type": "baseCrochetRattle"
+        "type": "baseCrochetRattle",
+        "number": 31
       },
       {
         "id": "20210828-08",
-        "type": "baseRattle"
+        "type": "baseRattle",
+        "number": 32
       }
     ]
   },
@@ -157,35 +189,43 @@
     "items": [
       {
         "id": "20210823-01",
-        "type": "base"
+        "type": "base",
+        "number": 33
       },
       {
         "id": "20210823-02",
-        "type": "baseBunny"
+        "type": "baseBunny",
+        "number": 34
       },
       {
         "id": "20210823-03",
-        "type": "baseBunnyCrochet"
+        "type": "baseBunnyCrochet",
+        "number": 35
       },
       {
         "id": "20210823-04",
-        "type": "baseBunnyCrochetRattle"
+        "type": "baseBunnyCrochetRattle",
+        "number": 36
       },
       {
         "id": "20210823-05",
-        "type": "baseBunnyRattle"
+        "type": "baseBunnyRattle",
+        "number": 37
       },
       {
         "id": "20210823-06",
-        "type": "baseCrochet"
+        "type": "baseCrochet",
+        "number": 38
       },
       {
         "id": "20210823-07",
-        "type": "baseCrochetRattle"
+        "type": "baseCrochetRattle",
+        "number": 39
       },
       {
         "id": "20210823-08",
-        "type": "baseRattle"
+        "type": "baseRattle",
+        "number": 40
       }
     ]
   },
@@ -195,35 +235,43 @@
     "items": [
       {
         "id": "20210723-01",
-        "type": "base"
+        "type": "base",
+        "number": 41
       },
       {
         "id": "20210723-02",
-        "type": "baseBunny"
+        "type": "baseBunny",
+        "number": 42
       },
       {
         "id": "20210723-03",
-        "type": "baseBunnyCrochet"
+        "type": "baseBunnyCrochet",
+        "number": 43
       },
       {
         "id": "20210723-04",
-        "type": "baseBunnyCrochetRattle"
+        "type": "baseBunnyCrochetRattle",
+        "number": 44
       },
       {
         "id": "20210723-05",
-        "type": "baseBunnyRattle"
+        "type": "baseBunnyRattle",
+        "number": 45
       },
       {
         "id": "20210723-06",
-        "type": "baseCrochet"
+        "type": "baseCrochet",
+        "number": 46
       },
       {
         "id": "20210723-07",
-        "type": "baseCrochetRattle"
+        "type": "baseCrochetRattle",
+        "number": 47
       },
       {
         "id": "20210723-08",
-        "type": "baseRattle"
+        "type": "baseRattle",
+        "number": 48
       }
     ]
   },
@@ -233,19 +281,23 @@
     "items": [
       {
         "id": "20210623-01",
-        "type": "baseCotton"
+        "type": "baseCotton",
+        "number": 49
       },
       {
         "id": "20210623-02",
-        "type": "baseCottonBunny"
+        "type": "baseCottonBunny",
+        "number": 50
       },
       {
         "id": "20210623-03",
-        "type": "baseCottonEars"
+        "type": "baseCottonEars",
+        "number": 51
       },
       {
         "id": "20210623-04",
-        "type": "baseCottonBunnyEars"
+        "type": "baseCottonBunnyEars",
+        "number": 52
       }
     ]
   },
@@ -255,19 +307,23 @@
     "items": [
       {
         "id": "20210523-01",
-        "type": "baseCotton"
+        "type": "baseCotton",
+        "number": 53
       },
       {
         "id": "20210523-02",
-        "type": "baseCottonBunny"
+        "type": "baseCottonBunny",
+        "number": 54
       },
       {
         "id": "20210523-03",
-        "type": "baseCottonEars"
+        "type": "baseCottonEars",
+        "number": 55
       },
       {
         "id": "20210523-04",
-        "type": "baseCottonBunnyEars"
+        "type": "baseCottonBunnyEars",
+        "number": 56
       }
     ]
   },
@@ -277,19 +333,23 @@
     "items": [
       {
         "id": "20210831-01",
-        "type": "blanket"
+        "type": "blanket",
+        "number": 57
       },
       {
         "id": "20210831-02",
-        "type": "blanketBunny"
+        "type": "blanketBunny",
+        "number": 58
       },
       {
         "id": "20210831-03",
-        "type": "blanketBase"
+        "type": "blanketBase",
+        "number": 59
       },
       {
         "id": "20210831-04",
-        "type": "blanketBaseBunny"
+        "type": "blanketBaseBunny",
+        "number": 60
       }
     ]
   },
@@ -299,19 +359,23 @@
     "items": [
       {
         "id": "20210831-05",
-        "type": "blanket"
+        "type": "blanket",
+        "number": 61
       },
       {
         "id": "20210831-06",
-        "type": "blanketBunny"
+        "type": "blanketBunny",
+        "number": 62
       },
       {
         "id": "20210831-07",
-        "type": "blanketBase"
+        "type": "blanketBase",
+        "number": 63
       },
       {
         "id": "20210831-08",
-        "type": "blanketBaseBunny"
+        "type": "blanketBaseBunny",
+        "number": 64
       }
     ]
   }
